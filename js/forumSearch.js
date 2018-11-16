@@ -14,7 +14,7 @@ function retrieveSearchInfo(){
 }
 
 var forumData = [
-    {'name': 'Steve M.', 'Question': ['How to make egg whites fluffy without a hand-mixer?'], 'link':'forumAnswers1.html', 'keyword': ['egg', 'eggs', 'whites', 'hand-mixer', 'hand', 'mixer'], 'email': 'steve@gmail.com', 'profile': 'ProfileSteveM.html'},
+    {'name': 'Steve M.', 'Question': ['How to make egg whites fluffy without a hand-mixer?'], 'link':'forumAnswers1.html', 'keyword': ['egg', 'eggs', 'whites', 'hand-mixer', 'hand', 'mixer'], 'email': 'mailto: steve@gmail.com', 'profile': 'ProfileSteveM.html'},
     {'name': 'Jack Q.', 'Question': ['What kind of pan should I use to sear steak?'], 'link':'forumAnswers1.html', 'keyword': ['pan', 'sear', 'steak'], 'email': 'jack@gmail.com', 'profile': 'ProfileJackQ.html'},
     {'name': 'Amy P.', 'Question': ['How do I use a crock pot?'], 'link':'forumAnswers1.html', 'keyword': ['crock', 'pot', 'crock pot'], 'email': 'amy@gmail.com', 'profile': 'ProfileAmyP.html'},
     {'name': 'Johnny G.', 'Question': ['Is it safe to cook chicken in a slow cooker?'], 'link':'forumAnswers1.html', 'keyword': ['safe', 'chicken', 'slow cooker'], 'email': 'johnny@gmail.com', 'profile': 'ProfileJohnnyG.html'},
