@@ -453,3 +453,8 @@ body
 	border-radius: 8px;
 }	
 
+#forumComment {
+	width: 100px;
+	height: 100px;
+}
+
