@@ -45,11 +45,99 @@
                 <br> <a href="{{link}}">Link</a>
             </p>
 			</div>
+		</div>
+
+		<div>
+	<script>
+			var myData = localStorage['objectToPass'];
+			localStorage.removeItem( 'objectToPass' ); // Clear the localStorage
+			var query = myData[0];
+			var address = myData[1];
+			//alert('firstData: ' + firstData + '\nsecondData: ' + secondData);
 		</script>
 
-		    <div id="forumResults">
-		      <!-- we will inject templated project HTML code into here -->
-	 		</div>
+
+			<script>
+				//var input = localStorage.getItem("query");
+				var address = localStorage.getItem("address");
+
+				function initMap() {
+					var latitude;
+				  var longitude;
+					var geocoder = new google.maps.Geocoder();
+					var address = localStorage.getItem("address");
+					geocoder.geocode( { 'address': address}, function(results, status) {
+
+					if (status == google.maps.GeocoderStatus.OK) {
+							latitude = results[0].geometry.location.lat();
+							localStorage.setItem( 'latitude', latitude);
+							longitude = results[0].geometry.location.lng();
+							localStorage.setItem( 'longitude', longitude);
+						}
+					});
+					var latitude = localStorage.getItem("latitude");
+					var longitude = localStorage.getItem('longitude');
+
+					latitude = localStorage.getItem("latitude");
+					longitude = localStorage.getItem("longitude");
+					alert(latitude);
+
+					// DO NOT DO THIS IN PRODUCTION CODE
+					// SANITIZE YOUR STRINGS IN LOCAL STORAGE BEFORE PARSING
+					var map = new google.maps.Map(document.getElementById('map'), {
+				  zoom: 8,
+				  center: {lat: parseFloat(latitude), lng: parseFloat(longitude)}
+				});
+
+			document.getElementById('submit').addEventListener('click', function() {
+			  geocodeAddress(geocoder, map);
+			});
+		  }
+			  </script>
+
+	<!-- CONTENT FOR PAGE -->
+
+		<div class="searchbar" style="margin-top: 20px; margin-left: 75px;">
+				<form name="myform2" id="myform2" method="get">
+			<input id="myQuestion" type="search" placeholder="Ask another question..."></input>
+			<a href="forumSearchResults.html" data-role="button" id="submit" onclick="processSearch2();" value="Search">Search</a>
+		</div>
+
+		<div class="containerForumAnswers">
+				<div class="leftColForum">
+					<div>
+						<h4 style="margin-left: 75px;">
+							Results for your question:
+						</h4>
+					</div>
+							<script id="forumResultsTemplate" type="text/x-handlebars-template">
+								<div class="forumResultsTemplate">
+
+									<h3 style="margin: 0px; padding: opx; color: black;">{{name}}</h3>
+									<br>{{Question}}
+									<br><br><a href="{{link}}"><button class="viewThreadButton">View This Thread</button></a>
+
+								</div>
+								<br>
+							</script>
+
+							<div id="forumResults">
+							<!-- forum results goes here -->
+							</div>
+
+							<div>
+								<p style="padding: 0px; margin-left: 75px;">Didn't find what you're searching for? We're sorry! Please try again!</p>
+							</div>
+					</div>
+				</div>
+
+				<div class="rightColForum">
+					<h4 style="margin: 0px;">Frequently asked questions</h4>
+					</h3>
+					<p class="forumLinks"><a href="forumAnswers2.html">What are some good egg free cookie recipes?</a>
+						<br><a href="forumAnswers1.html">How to make egg whites fluffy without a hand-mixer?</a></p>
+				</div>
+			</div>
 
 
 
