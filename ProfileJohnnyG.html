@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>Profile Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/introHCI.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="nav">
+    <div class="navigation">
+      <a class=left href="index.html">Home</a>
+      <container id="searchNav">
+        Find <input type="text" placeholder="Ingredients, recipes, tools...">
+        Near <input type="text" placeholder="Current location">
+        <a href="mapsPage.html"><button>Search</button></a>
+      </container>
+      <a class=right href="profile.html">Profile</a>
+      <a class=right href="forum.html">Forum</a>
+    </div>
+  </div>
+
+  <div>
+    <div class = "profileRow1">
+      <div class = "column left" id = "pic">
+        <img class="img-thumbnail img-fluid" src="profilePicIcon.png"/>
+      </div>
+      <div class = "column right" id = "contact">
+        <h1 id="profileName">Jack Q.</h1>
+        <p id="profileLocation">San Jose, CA</p>
+        <br>
+        <a href="steve@gmail.com">
+          <img id = "messageIcon" src = "email-icon.png" style = "cursor:pointer">
+        </a>
+      </div>
+    </div>
+
+    <div class="profileRow2">
+
+      <div class="column2" id = "Tools">
+        <div class = "titleProf">
+          <h3>My Tools</h3>
+        </div>
+        <ul id = "mytools" style="list-style-type:disc">
+          <li>whisk</li>
+          <li>Nutribullet</li>
+          <li>steamer rack</li>
+          <li>sushi roller mat</li>
+        </ul>
+      </div>
+
+      <div class="column2">
+        <div class = "titleProf">
+          <h3>My Ingredients</h3>
+        </div>
+        <ul id = "myingredients" style="list-style-type:disc">
+          <li>rice</li>
+            <li>eggs</li>
+            <li>corn starch</li>
+            <li>paprika</li>
+            <li>flour</li>
+        </ul>
+      </div>
+
+      <div class="column2">
+        <div class = "titleProf">
+          <h3>My Recipes</h3>
+        </div>
+        <ul id = "myrecipes" style="list-style-type:disc">
+          <li>Hot-mulled cider</li>
+            <li>Baby Back Ribs</li>
+            <li>Spinach Dip</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/handlebars-v4.0.11.js"></script>
+  <script src="js/editProfile.js"></script>
+  <script src="js/editProfile2.js"></script>
+  <script src="js/editProfile3.js"></script>
+  <script src="js/profile.js"></script>
+
+</body>
+</html>

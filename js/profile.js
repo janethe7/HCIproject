@@ -4,7 +4,6 @@ function processLogin(){
 
     localStorage.setItem("username", username);
     localStorage.setItem("password", password);
-    alert("Saved: " + localStorage.getItem("username") + ", and " + localStorage.getItem("password"));
 }
 
 function processSignup(){
@@ -13,7 +12,6 @@ function processSignup(){
 
     localStorage.setItem("username", username);
     localStorage.setItem("location", location);
-    alert("Saved: " + localStorage.getItem("username") + ", and " + localStorage.getItem("location"));
 }
 
 function addTool(){
@@ -21,7 +19,6 @@ function addTool(){
 
     localStorage.setItem("tool", tool);
     userTools.push(tool);
-    alert("Saved: " + localStorage.getItem("tool"));
 }
 
 

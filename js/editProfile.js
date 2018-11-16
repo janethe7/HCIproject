@@ -7,13 +7,11 @@ var userTools = [];
 userTools[0] = newtask;
 userTools.push(newtask);
 console.log(userTools);
-alert("Saved: " + localStorage.getItem("newtask"));
 
     var tool = $("#newTask").val();
 
     localStorage.setItem("tool", tool);
     userTools.push(tool);
-    alert("Saved: " + localStorage.getItem("tool"));
 
 
 
