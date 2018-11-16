@@ -2,8 +2,6 @@ function processSearch2(){
     var input = $("#myQuestion").val();
 
     localStorage.setItem("input", input);
-    var forumDataTEMP = forumData;
-
 }
 
 function clearSearch(){
@@ -83,5 +81,5 @@ for (var i = 0; i < forumDataTEMP.length; i++) { //goes through all data
         }
     }
 }
-forumDataTEMP = forumData;
+
 })

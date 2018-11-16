@@ -4,7 +4,7 @@ function processSearch(){
 
     localStorage.setItem("input", input);
     localStorage.setItem("address", address);
-    //alert("Saved: " + localStorage.getItem("input") + ", and " + localStorage.getItem("address"));
+    alert("Saved: " + localStorage.getItem("input") + ", and " + localStorage.getItem("address"));
 }
 
 function clearSearch(){
