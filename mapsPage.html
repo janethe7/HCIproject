@@ -22,6 +22,7 @@
 					Find <input id="query" type="text" placeholder="Ingredients, recipes, tools...">
 					Near <input id="address" type="text" placeholder="Current location">
 					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
+
 					<!--<input id="submit" type="button" value="Search" onclick="processSearch();">-->
 			</container>
 			<a class=right href="profile.html">Profile</a>
@@ -71,7 +72,6 @@
 
 				latitude = localStorage.getItem("latitude");
 				longitude = localStorage.getItem("longitude");
-				alert(latitude);
 
 				// DO NOT DO THIS IN PRODUCTION CODE
 				// SANITIZE YOUR STRINGS IN LOCAL STORAGE BEFORE PARSING
