@@ -16,16 +16,15 @@
 				<a class=left href="index.html">Home</a>
 				<container id="searchNav">
 					<form name="myform" id="myform" action="" method="get">
-						Find <input id="query" type="text" placeholder="Ingredients, recipes, tools...">
+						Find<input id="query" type="text" placeholder="Ingredients, recipes, tools..."></input>
 						Near <input id="address" type="text" placeholder="Current location">
 						<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
-						<!--<input id="submit" type="button" value="Search" onclick="processSearch();">-->
 				</container>
-				<a class=right href="profile.html">Profile</a>
 				<a class=right href="forum.html">Forum</a>
+				<a class=right href="profile.html">Profile</a>
 			</div>
 		</div>
-	
+
 		<div>
 	<script>
 			var myData = localStorage['objectToPass'];
@@ -34,19 +33,19 @@
 			var address = myData[1];
 			//alert('firstData: ' + firstData + '\nsecondData: ' + secondData);
 		</script>
-	
-			
+
+
 			<script>
 				//var input = localStorage.getItem("query");
 				var address = localStorage.getItem("address");
-	
+
 				function initMap() {
 					var latitude;
 				  var longitude;
 					var geocoder = new google.maps.Geocoder();
 					var address = localStorage.getItem("address");
 					geocoder.geocode( { 'address': address}, function(results, status) {
-	
+
 					if (status == google.maps.GeocoderStatus.OK) {
 							latitude = results[0].geometry.location.lat();
 							localStorage.setItem( 'latitude', latitude);
@@ -56,18 +55,18 @@
 					});
 					var latitude = localStorage.getItem("latitude");
 					var longitude = localStorage.getItem('longitude');
-	
+
 					latitude = localStorage.getItem("latitude");
 					longitude = localStorage.getItem("longitude");
 					alert(latitude);
-	
+
 					// DO NOT DO THIS IN PRODUCTION CODE
 					// SANITIZE YOUR STRINGS IN LOCAL STORAGE BEFORE PARSING
 					var map = new google.maps.Map(document.getElementById('map'), {
 				  zoom: 8,
 				  center: {lat: parseFloat(latitude), lng: parseFloat(longitude)}
 				});
-	
+
 			document.getElementById('submit').addEventListener('click', function() {
 			  geocodeAddress(geocoder, map);
 			});
@@ -91,25 +90,25 @@
 					</div>
 							<script id="forumResultsTemplate" type="text/x-handlebars-template">
 								<div class="forumResultsTemplate">
-									
+
 									<h3 style="margin: 0px; padding: opx; color: black;">{{name}}</h3>
 									<br>{{Question}}
 									<br><br><a href="{{link}}"><button class="viewThreadButton">View This Thread</button></a>
-									
+
 								</div>
 								<br>
 							</script>
-					
+
 							<div id="forumResults">
 							<!-- forum results goes here -->
 							</div>
-								 
+
 							<div>
 								<p style="padding: 0px; margin-left: 75px;">Didn't find what you're searching for? We're sorry! Please try again!</p>
 							</div>
 					</div>
 				</div>
-		
+
 				<div class="rightColForum">
 					<h4 style="margin: 0px;">Frequently asked questions</h4>
 					</h3>
