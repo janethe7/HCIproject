@@ -24,79 +24,77 @@
 </header>
 
 <body>
-        <div class="searchbar" style="margin-top: 20px; margin-left: 75px;">
-            <!-- margin 450 for center-ish position -->
-				<form name="myform2" id="myform2" method="get">
-			<input id="myQuestion" type="search" placeholder="Ask another question..."></input>
-			<a href="forumSearchResults.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
-		</div>
 
-        <h3 style="margin-left: 75px">
-                "How do I use a crock pot?"
-            </h3>
+        <h3 style="margin-left: 35px">
+                "How to make egg whites fluffy without a hand-mixer?"
+        </h3>
 
     <div class="containerForumAnswers">
         <div class="leftColForum">
-            <div>
                 <h4 style="margin-left: 75px;">
-                    Results for your question:
-                </h4>
-            </div>
+                        Results for your question:
+                    </h4>
             <div class="commentForum">
                 <img src="profilePicIcon.png" height="40px" width="40px" id="profilePic">
-                    <h3>Jess K.</h3>
-                <p style="padding: 0px">I love using crock pots. So glad you invested in one. You can 
-                in so many things. My favorite is this recipe: <a href="https://life-in-the-lofthouse.com/crock-pot-beef-stew/">https://life-in-the-lofthouse.com/crock-pot-beef-stew/</a>
-                It's just so yummy for dinner and great heated up for work the next day!</p>
+                    <h3>Sarah V.</h3>
+                <p style="padding: 0px">I make my eggs fluffy by using a large whisk. Whisk in a
+                    circular motion to bring air into the egg whites. Make sure to set the egg whites
+                    aside to reach room temperature so they get fluffy faster.</p>
 
-                <h4 style="padding: 0px; margin-left: 15px">Mac M.</h4>
-                <p style="padding: 0px; margin-left: 15px">This looks so good, I need to give this a try.</p>
+                <h4 style="padding: 0px; margin-left: 15px">Kayla L.</h4>
+                <p style="padding: 0px; margin-left: 15px">Oh yeah, I heard the room temperature thing works because
+                the molecules expand or something! How interesting!</p>
 
-                <h4 style="padding: 0px; margin-left: 15px">Ryan R.</h4>
-                <p style="padding: 0px; margin-left: 15px">Add some basil leaves, for some reason it just brings
-                the whole dish togther.</p>
+                <h4 style="padding: 0px; margin-left: 15px">Alex K.</h4>
+                <p style="padding: 0px; margin-left: 15px">Try using a copper bowl. The chemicals react with the egg whites and helps
+                it keep the shape.</p>
 
-                <h4 style="padding: 0px; margin-left: 15px">Joe W.</h4>
-                <p style="padding: 0px; margin-left: 15px">I love making using leftovers and just tossing it in the pot. 
-                Thanksgiving is coming up soon. All that turkey and gravy and veggies will be so good!</p>
-                       
+                <h4 style="padding: 0px; margin-left: 15px">Steve L.</h4>
+                <p style="padding: 0px; margin-left: 15px">If you don't have a whisk. You can use a fork!</p>
+
+                <h4 style="padding: 0px; margin-left: 15px">Karen C.</h4>
+                <p style="padding: 0px; margin-left: 15px">Oh no, I tried using the fork method. It takes so much time
+                but the pay off is not worth it!</p>
+
+
+                <!-- Comment Box 1 -->
                 <p id="demo"></p>
-                    <script>
-                            function myFunction() {
-                                var x = document.getElementById("myText").value;                                
-                                document.getElementById("demo").innerHTML = x;
-                            }
-                            </script>
+				<input type="text" id="myText" placeholder="Type your comment here...">
+			    <button onclick="myFunction()">Comment</button>
+				<script>
+					function myFunction() {
+					var x = document.getElementById("myText").value;
+					document.getElementById("demo").innerHTML = x;
+					}
+				</script>
                 
-                <input type="text" id="myText" placeholder="Type your comment here...">
-                <button onclick="myFunction()">Comment</button>
-
-                <p id="demo2"></p>
-                <script>
-                        function myFunction2() {
-                            var y = document.getElementById("myText2").value;                                
-                            document.getElementById("demo2").innerHTML = y;
-                        }
-                        </script>
-            
-            <input type="text" id="myText2" placeholder="Type your comment here...">
-            <button onclick="myFunction2()">Comment</button>
-
+                <!-- Comment Box 2 -->
+                <p id="demo1"></p>
+                <input type="text" id="myText2" placeholder="Type your comment here...">
+				<button onclick="myFunction2()">Comment </button>
+				<script>
+					function myFunction2() {
+					var y = document.getElementById("myText2").value;
+					document.getElementById("demo1").innerHTML = y;
+					}
+                </script>
             </div>
         </div>
 
         <div class="rightColForum">
-            <h4>Frequently asked questions</h4>
+            <h4>Check out some frequently asked questions here!</h4>
             </h3>
-            <p class="forumLinks"><a href="forumAnswers2.html">What are some good egg free cookie recipes?</a>
-                <br><a href="forumAnswers1.html">How to make egg whites fluffy without a hand-mixer?</a></p>
+            <p><a href="forumAnswers2.html">What are some good egg free cookie recipes?</a>
+                <br><a href="forumAnswers3.html">How do I use a crock pot?</a></p>
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/handlebars-v4.0.11.js"></script>
-    <script src="js/search.js"></script>  
+    <script src="js/search.js"></script>
+    <script src="js/forumSearch.js"></script>
     
+
 </body>
 </html>

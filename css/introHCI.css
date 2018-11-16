@@ -195,6 +195,7 @@ h1 {
 	float: left;
 	width: 60%;
 	padding: 0px;
+	background-color: pink;
 }
 
 .rightColForum {
@@ -202,6 +203,7 @@ h1 {
 	padding: 0px;
 	width: 36%;
 	padding: 0px;
+	background-color: orange;
 }
 
 .forumLinks {
