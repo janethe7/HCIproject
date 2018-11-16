@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>What kind of pan should I use to sear steak?</title>
+	<title>Is it safe to cook chicken in a slow cooker?</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/introHCI.css" rel="stylesheet" />
@@ -11,7 +11,7 @@
 <header>
 	<div class="nav">
 		<div class="navigation">
-			<a class=left href="index.html">Communal Cooking</a>
+			<a class=left href="index.html">Home</a>
 			<container id="searchNav">
 				<form name="myform" id="myform" action="" method="get">
 					Find<input id="query" type="text" placeholder="Ingredients, recipes, tools..."></input>
@@ -27,22 +27,14 @@
 <body>
 
         <h3 style="margin-left: 75px">
-                "What kind of pan should I use to sear steak?"
+                "Is it safe to cook chicken in a slow cooker?"
         </h3>
 
     <div class="containerForumAnswers">
         <div class="leftColForum">
             <div class="commentForum">
-                    <h3>Bob P.</h3>
-                <p style="padding: 0px">I use a cast iron!</p>
-
-                <h4 style="padding: 0px; margin-left: 50px">Tom W.</h4>
-                <p style="padding: 0px; margin-left: 50px">I do too! Sometimes, I just sear the steak real fast
-                for the crust on the outside, and then I put the whole cast iron in the oven to cook the steak.</p>
-
-                <h4 style="padding: 0px; margin-left: 50px">Kim L.</h4>
-                <p style="padding: 0px; margin-left: 50px">Remember to never wash the cast iron! I had no idea and it
-                really ruined my pan!</p>
+                    <h3>Johnny G.</h3>
+                <p style="padding: 0px">Sure, I don't see why not!</p>
 
                 <!-- Comment Box 1 -->
                 <p id="demo1"></p>
@@ -57,13 +49,9 @@
             </div>
 
             <div class="commentForum">
-                        <h3>Chloe M.</h3>
-                    <p style="padding: 0px">I use some kind of heavy frying pan.</p>
-
-                    <h4 style="padding: 0px; margin-left: 50px">Tammy B.</h4>
-                    <p style="padding: 0px; margin-left: 50px">Yeah, I don't really have a specific one. I'm
-                    still learning with cooking steak.</p>
-
+                        <h3>Gabby H.</h3>
+                    <p style="padding: 0px">Yeah same! I think it's safe?</p>
+    
                     <!-- Comment Box 2 -->
                     <p id="demo2"></p>
                     <input type="text" id="myText2" placeholder="Type your comment here...">
@@ -75,6 +63,25 @@
                         }
                     </script>
                 </div>
+
+                <div class="commentForum">
+                    <h3>Joe C.</h3>
+                <p style="padding: 0px">It should be. Give it a try, and let us know! Haha!</p>
+
+                <h4 style="padding: 0px; margin-left: 50px">Johnny G.</h4>
+                <p style="padding: 0px; margin-left: 50px">I gave it a try, so far so good! It was safe! :)</p>
+
+                <!-- Comment Box 3 -->
+                <p id="demo3"></p>
+                <input type="text" id="myText3" placeholder="Type your comment here...">
+                <button input type='button' / onclick="myFunction3()">Comment</button>
+                <script>
+                    function myFunction3() {
+                    var z = document.getElementById("myText3").value;
+                    document.getElementById("demo3").innerHTML = z;
+                    }
+                </script>
+            </div>
         </div>
 
         <div class="rightColForum">
@@ -83,7 +90,7 @@
             <p><a href="forumAnswers3.html">How to make egg whites fluffy without a hand-mixer?</a>
                 <br><a href="forumAnswers6.html">What kind of pan should I use to sear steak?</a>
                 <br><a href="forumAnswers7.html">How to cook pasta.</a>
-                <br><a href="forumAnswers4.html">Is it safe to cook chicken in a slow cooker?</a>
+
                 <br><a href="forumAnswers5.html">What are the must have knives?</a>
         </div>
     </div>
@@ -93,7 +100,7 @@
 	<script src="js/handlebars-v4.0.11.js"></script>
     <script src="js/search.js"></script>
     <script src="js/forumSearch.js"></script>
-
+    
 
 </body>
 </html>
