@@ -14,7 +14,6 @@ function retrieveSearchInfo(){
 }
 
 var forumData = [
-<<<<<<< HEAD
     {'name': 'Steve M.', 'Question': ['How to make egg whites fluffy without a hand-mixer?'], 'link':'forumAnswers1.html', 'keyword': ['egg', 'eggs', 'whites', 'hand-mixer', 'hand', 'mixer'], 'email': 'steve@gmail.com'},
     {'name': 'Jack Q.', 'Question': ['What kind of pan should I use to sear steak?'], 'link':'forumAnswers1.html', 'keyword': ['pan', 'sear', 'steak'], 'email': 'jack@gmail.com'},
     {'name': 'Amy P.', 'Question': ['How do I use a crock pot?'], 'link':'forumAnswers1.html', 'keyword': ['crock', 'pot', 'crock pot'], 'email': 'amy@gmail.com'},
@@ -30,7 +29,6 @@ var forumData = [
     // {'name': 'Chris J.', 'Question': ['Can you substitute baking soda for baking powder?'], 'link':'forumAnswers1.html', 'keyword': ['substitute', 'baking', 'baking soda', 'powder', 'baking powder'], 'email': 'chris@gmail.com'},
     // {'name': 'Kylie K.', 'Question': ['How much water do I need to cook rice?'], 'link':'forumAnswers1.html', 'keyword': ['rice', 'water', 'cook', 'much'], 'email': 'kylie@gmail.com'},
     // {'name': 'Kim L.', 'Question': ['How do I know if an egg has gone bad?'], 'link':'forumAnswers1.html', 'keyword': ['egg', 'bad', 'eggs'], 'email': 'kim@gmail.com'},
-=======
     {'name': 'Steve M.', 'Question': ['How to make egg whites fluffy without a hand-mixer?'], 'link':'forumAnswers3.html', 'keyword': ['egg', 'eggs', 'whites', 'hand-mixer', 'hand', 'mixer'], 'email': 'steve@gmail.com', 'profile': 'ProfileSteveM.html'},
     {'name': 'Jack Q.', 'Question': ['What kind of pan should I use to sear steak?'], 'link':'forumAnswers1.html', 'keyword': ['pan', 'sear', 'steak'], 'email': 'jack@gmail.com', 'profile': 'ProfileJackQ.html'},
     {'name': 'Amy P.', 'Question': ['How do I use a crock pot?'], 'link':'forumAnswers2.html', 'keyword': ['crock', 'pot', 'crock pot'], 'email': 'amy@gmail.com', 'profile': 'ProfileAmyP.html'},
@@ -46,7 +44,6 @@ var forumData = [
     {'name': 'Chris J.', 'Question': ['Can you substitute baking soda for baking powder?'], 'link':'forumAnswers1.html', 'keyword': ['substitute', 'baking', 'baking soda', 'powder', 'baking powder'], 'email': 'chris@gmail.com'},
     {'name': 'Kylie K.', 'Question': ['How much water do I need to cook rice?'], 'link':'forumAnswers1.html', 'keyword': ['rice', 'water', 'cook', 'much'], 'email': 'kylie@gmail.com'},
     {'name': 'Kim L.', 'Question': ['How do I know if an egg has gone bad?'], 'link':'forumAnswers1.html', 'keyword': ['egg', 'bad', 'eggs'], 'email': 'kim@gmail.com'}, */
->>>>>>> 5132aef92142d5bea68a85b141004c471c363e46
 
 ]
 
