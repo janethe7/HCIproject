@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>How to cook pasta.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/introHCI.css" rel="stylesheet" />
+</head>
+
+<header>
+	<div class="nav">
+		<div class="navigation">
+			<a class=left href="index.html">Home</a>
+			<container id="searchNav">
+				<form name="myform" id="myform" action="" method="get">
+					Find<input id="query" type="text" placeholder="Ingredients, recipes, tools..."></input>
+					Near <input id="address" type="text" placeholder="Current location">
+					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
+			</container>
+			<a class=right href="forum.html">Forum</a>
+			<a class=right href="profile.html">Profile</a>
+		</div>
+	</div>
+</header>
+
+<body>
+
+        <h3 style="margin-left: 75px">
+                "How to cook pasta."
+        </h3>
+
+    <div class="containerForumAnswers">
+        <div class="leftColForum">
+            <div class="commentForum">
+                    <h3>Kim L.</h3>
+                <p style="padding: 0px">Fill a large stockpot with water. The more water the better - pasta only sticks when it is cooked in too little water.
+                        Add salt. Salt makes pasta taste better, and won't appreciably increase the sodium level of your recipes. Use 1 teaspoon per gallon of water. At that level, 2 ounces of uncooked pasta (1 cup cooked), the FDA serving size, absorbs about 20 mg of sodium which is about 1% of the recommended daily sodium intake. That's nothing. You can certainly add more pasta; in fact, Italians say that pasta water should taste as salty as the sea.
+                        Bring the water to a rolling boil. This means a boil you can't stop by stirring.
+                        Measure the pasta you need. Pasta generally doubles in size when cooked, so 1 cup uncooked = 2 cups cooked. Refer to the recipe if necessary.
+                        Slowly add the pasta to the boiling water. Ideally, the water shouldn't stop boiling, but if that happens, it's ok.
+                        Stir and stir some more! Pasta will stick together if it isn't stirred during the crucial first moments of cooking. Don't add oil, because that will make the pasta slippery and the sauce won't stick to it when it's done.
+                        <br><br>
+                        Start timing when the water returns to a boil. Most pastas cook in 8 to 12 minutes. Check the package directions! And stir every few minutes.
+                        You can regulate the heat so the pasta/water mixture doesn't foam up and over the pot sides. Lower it the tiniest bit, and everything should be under control. Or you can add a bit of butter to the pot; this reduces the surface tension of the water so it won't boil over.
+                        Really the only way to tell if the pasta is correctly cooked is to taste it. It should be 'al dente' - firm, yet tender, with a tiny core in the middle. Test it 2 minutes before the earliest cooking time stated on the box. You can't "uncook" overcooked pasta.
+                        You can also cut into a piece of pasta you've fished out of the pot. There shouldn't be any solid white in the center of the pasta - just a shading to more opaque cream color.
+                        Now drain the pasta into a colander placed into your kitchen sink. Lift the colander and shake off the excess water.
+                        Don't rinse the pastaif you're serving a hot dish. That removes the starch that helps hold the sauce. If you are making a cold salad, rinse so the salad isn't sticky. On the other hand, I never rinse my pasta for cold main dish salads, simply because I like how the hot pasta absorbs the dressing. It's up to you!
+                        Use the pasta in the recipe. Toss it into simmering sauce, mix it with a cold sauce, add to salads or use in frittatas. If any pasta is leftover, store it using this tip.</p>
+
+
+                <!-- Comment Box 1 -->
+                <p id="demo1"></p>
+                <input type="text" id="myText" placeholder="Type your comment here...">
+                <button input type='button' / onclick="myFunction()">Comment</button>
+                <script>
+                    function myFunction() {
+                    var x = document.getElementById("myText").value;
+                    document.getElementById("demo1").innerHTML = x;
+                    }
+                </script>
+            </div>
+
+        </div>
+
+        <div class="rightColForum">
+            <h4>Check out some frequently asked questions here!</h4>
+            </h3>
+            <p><a href="forumAnswers3.html">How to make egg whites fluffy without a hand-mixer?</a>
+                <br><a href="forumAnswers6.html">What kind of pan should I use to sear steak?</a>
+
+                <br><a href="forumAnswers4.html">Is it safe to cook chicken in a slow cooker?</a>
+                <br><a href="forumAnswers5.html">What are the must have knives?</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v4.0.11.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/forumSearch.js"></script>
+    
+
+</body>
+</html>

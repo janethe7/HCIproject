@@ -242,7 +242,6 @@ header {
 	float: left;
 	width: 60%;
 	padding: 0px;
-	background-color: pink;
 }
 
 .rightColForum {
@@ -250,7 +249,6 @@ header {
 	padding: 0px;
 	width: 36%;
 	padding: 0px;
-	background-color: orange;
 }
 
 .forumLinks {
