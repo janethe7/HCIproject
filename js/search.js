@@ -63,8 +63,6 @@ var userData = [
     {'name': 'Chris', 'location': 'SAN FRANCISCO, CA', 'Ingredients': ['cumin', 'paprika', 'hot sauce', 'vanilla extract'], 'Tools': ['crock pot', 'masher', 'pan', 'whisk']},
     {'name': 'Kim', 'location': 'SAN DIEGO, CA', 'Ingredients': ['honey', 'nutmeg', 'curry', 'garlic'], 'Tools': ['food processor', 'measuring spoon', 'wok', 'peeler']},
 
-
-
   ]
 
   // Call this function when the page loads (the "ready" event)

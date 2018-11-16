@@ -23,59 +23,50 @@
 	</div>
 
 	<div>
-		<div>
-			<div class = "topProfile">
-				<div class = "row">
-					<div class = "leftCol" id = "pic">
-						<img class="img-thumbnail img-fluid" src="profilePicIcon.png"/>
-					</div>
+		<div class = "profileRow1">
+			<div class = "column left" id = "pic">
+				<img class="img-thumbnail img-fluid" src="profilePicIcon.png"/>
+			</div>
+			<div class = "column right" id = "contact">
+				<h1 id="result"></h1>
+				<script>
+				document.getElementById("result").innerHTML = localStorage.getItem("username");
+				</script>
+				<p id="userLocation"></p>
+				<br>
+				<a href="mailto:default@gmail.com">
+					<img id = "messageIcon" src = "messengerIcon.png" style = "cursor:pointer">
+				</a>
 
+				<script>
+				document.getElementById("userLocation").innerHTML = localStorage.getItem("location");
+				</script>
+			</div>
+		</div>
 
-					<div class = "rightCol" id = "contact">
-						<h1 id="result"></h1>
-						<script>
-						document.getElementById("result").innerHTML = localStorage.getItem("username");
-						</script>
-						<p id="userLocation"></p>
-							<br>
-							<a href="javascript:register_popup('narayan-prusty', 'Steve M.');">
-								<img id = "messageIcon" src = "messengerIcon.png" style = "cursor:pointer">
-							</a>
-						<script>
-						document.getElementById("userLocation").innerHTML = localStorage.getItem("location");
-						</script>
+		<div class="profileRow2">
 
+			<div class="column2" id = "Tools">
+				<div class = "titleProf">
+					<h3>My Tools</h3>
+				</div>
+				<div id="nTaskPlace">
+					<div id="addNew">
+						<input id="newTask" type="text">
+						<button id="add"> add </button>
 					</div>
 				</div>
 			</div>
-			<div id="row2">
-				<div class="column2" id = "Tools">
-					<div class = "titleProf">
-						<h3>My Tools</h3>
-					</div>
-					<div id="nTaskPlace">
-						<div id="addNew">
-							<input id="newTask" type="text">
-							<button id="add"> add </button>
-						</div>
-					</div>
+
+			<script id="entry-template" type="text/x-handlebars-template">
+				<div>
+					<p>{userTools}</p>
 				</div>
+			</script>
 
-				<script id="entry-template" type="text/x-handlebars-template">
-						<div>
-						<p>{userTools}</p>
-						</div>
-					</script>
-
-					    <div id="templatedProjects">
-					      <!-- we will inject templated project HTML code into here -->
-				 		</div>
-
-
-
-
-
-
+			<div id="templatedProjects">
+				<!-- we will inject templated project HTML code into here -->
+			</div>
 
 			<div class="column2">
 				<div class = "titleProf">
@@ -88,6 +79,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="column2">
 				<div class = "titleProf">
 					<h3>My Recipes</h3>
@@ -100,19 +92,16 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
-</div>
 
-</div>
-
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/handlebars-v4.0.11.js"></script>
-		<script src="js/editProfile.js"></script>
-		<script src="js/editProfile2.js"></script>
-		<script src="js/editProfile3.js"></script>
-		<script src="js/popupMessage.js"></script>
-		<script src="js/profile.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v4.0.11.js"></script>
+	<script src="js/editProfile.js"></script>
+	<script src="js/editProfile2.js"></script>
+	<script src="js/editProfile3.js"></script>
+	<script src="js/profile.js"></script>
 
 </body>
 </html>
