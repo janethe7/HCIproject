@@ -9,16 +9,17 @@
 </head>
 
 <header>
-    <div class="nav">
+	<div class="nav">
 		<div class="navigation">
 			<a class=left href="index.html">Home</a>
 			<container id="searchNav">
-					Find <input type="text" placeholder="Ingredients, recipes, tools...">
-					Near <input type="text" placeholder="Current location">
-					<a href="mapsPage.html"><button>Search</button></a>
+				<form name="myform" id="myform" action="" method="get">
+					Find<input id="query" type="text" placeholder="Ingredients, recipes, tools..."></input>
+					Near <input id="address" type="text" placeholder="Current location">
+					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
 			</container>
-			<a class=right href="profile.html">Profile</a>
 			<a class=right href="forum.html">Forum</a>
+			<a class=right href="profile.html">Profile</a>
 		</div>
 	</div>
 </header>
@@ -41,7 +42,7 @@
                     circular motion to bring air into the egg whites.</p>
 
                 <h4 style="padding: 0px; margin-left: 100px">Kayla L.</h4>
-                <p style="padding: 0px; margin-left: 50px">I do the same! Whisk in a circular motion vertically, 
+                <p style="padding: 0px; margin-left: 50px">I do the same! Whisk in a circular motion vertically,
                 not stirring around the bowl. That brings in the air as you lift the whisk each time.</p>
 
                 <!-- Comment Box 1 -->
@@ -62,7 +63,7 @@
                 <p style="padding: 0px">Make sure to set the egg whites out </p>
 
                 <h4 style="padding: 0px; margin-left: 100px">Kayla L.</h4>
-                <p style="padding: 0px; margin-left: 50px">I do the same! Whisk in a circular motion vertically, 
+                <p style="padding: 0px; margin-left: 50px">I do the same! Whisk in a circular motion vertically,
                 not stirring around the bowl. That brings in the air as you lift the whisk each time.</p>
 
                 <!-- Comment Box 2 -->
@@ -90,7 +91,7 @@
 	<script src="js/handlebars-v4.0.11.js"></script>
     <script src="js/search.js"></script>
     <script src="js/forumSearch.js"></script>
-    
+
 
 </body>
 </html>

@@ -9,16 +9,17 @@
 </head>
 
 <header>
-    <div class="nav">
+	<div class="nav">
 		<div class="navigation">
 			<a class=left href="index.html">Home</a>
 			<container id="searchNav">
-					Find <input type="text" placeholder="Ingredients, recipes, tools...">
-					Near <input type="text" placeholder="Current location">
-					<a href="mapsPage.html"><button>Search</button></a>
+				<form name="myform" id="myform" action="" method="get">
+					Find<input id="query" type="text" placeholder="Ingredients, recipes, tools..."></input>
+					Near <input id="address" type="text" placeholder="Current location">
+					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
 			</container>
-			<a class=right href="profile.html">Profile</a>
 			<a class=right href="forum.html">Forum</a>
+			<a class=right href="profile.html">Profile</a>
 		</div>
 	</div>
 </header>
@@ -67,7 +68,7 @@
 					document.getElementById("demo").innerHTML = x;
 					}
 				</script>
-                
+
                 <!-- Comment Box 2 -->
                 <p id="demo1"></p>
                 <input type="text" id="myText2" placeholder="Type your comment here...">
@@ -94,7 +95,7 @@
 	<script src="js/handlebars-v4.0.11.js"></script>
     <script src="js/search.js"></script>
     <script src="js/forumSearch.js"></script>
-    
+
 
 </body>
 </html>
