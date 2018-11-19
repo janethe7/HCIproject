@@ -11,14 +11,15 @@
 <body>
   <div class="nav">
     <div class="navigation">
-      <a class=left href="index.html">Home</a>
+      <a class=left href="index.html">Communal Cooking</a>
       <container id="searchNav">
-        Find <input type="text" placeholder="Ingredients, recipes, tools...">
-        Near <input type="text" placeholder="Current location">
-        <a href="mapsPage.html"><button>Search</button></a>
+        <form name="myform" id="myform" action="" method="get">
+          Find<input id="query" type="text" placeholder="Ingredients, recipes, tools..."></input>
+          Near <input id="address" type="text" placeholder="Current location">
+          <a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
       </container>
-      <a class=right href="profile.html">Profile</a>
       <a class=right href="forum.html">Forum</a>
+      <a class=right href="profile.html">Profile</a>
     </div>
   </div>
 
@@ -28,8 +29,8 @@
         <img class="img-thumbnail img-fluid" src="profilePicIcon.png"/>
       </div>
       <div class = "column right" id = "contact">
-        <h1 id="profileName">Jack Q.</h1>
-        <p id="profileLocation">San Jose, CA</p>
+        <h1 id="profileName">Bob P.</h1>
+        <p id="profileLocation">San Diego, CA</p>
         <br>
         <a href="steve@gmail.com">
           <img id = "messageIcon" src = "email-icon.png" style = "cursor:pointer">
