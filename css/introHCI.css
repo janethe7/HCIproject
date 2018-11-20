@@ -183,15 +183,17 @@ header {
 
 .searchbar {
 		float: center;
-		padding: 6px;
+		padding: 0px;
 		margin-top: 0px;
 		margin-right: 100px;
-		margin-left: 60px;
+		margin-left: 180px;
 		font-size: 20px;
+		height: 65px;
 		border: 1px solid gray;
 		color: #bfbfbf;
 		background: white;
 		display: inline-block;
+		padding-left: 6px;
 }
 
 
@@ -216,14 +218,15 @@ header {
 		font-weight: lighter;
 }
 
-.searchbar button {
+.searchbar #submit {
   float: right;
-  width: 160px;
-	height: 72px;
-  padding: 6px;
-	margin-left: 40px;
-  background: #ccdfde;
-  color: black;
+  width: 80px;
+	height: 29px;
+  padding: 18px 38px;
+	margin-left: -20px;
+	background-color: #6ca2a0;
+	text-decoration: none;
+	color: black;
   font-size: 20px;
 	font-family: "Futura", Verdana, serif;
   border-left: none; /* Prevent double borders */
