@@ -9,9 +9,16 @@ function processLogin(){
 function processSignup(){
     var username = $("#name").val();
     var location = $("#location").val();
+    var password1 = $("#password2").val();
+    var confirmPassword = $("#password").val();
 
     localStorage.setItem("username", username);
     localStorage.setItem("location", location);
+    
+if (password1 != confirmPassword) {
+    alert('Your passwords do not match. Please re-enter your passwords and try again!');
+}
+
 }
 
 function addTool(){
