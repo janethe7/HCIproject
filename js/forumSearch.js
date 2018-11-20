@@ -25,7 +25,7 @@ var forumData = [
     {'name': 'Tammy B.', 'Question': ['What are some good gluten free banana bread recipes?'], 'link':'forumAnswers8.html', 'keyword': ['gluten', 'free', 'banana', 'bread', 'recipe'], 'email': 'tammy@gmail.com', 'profile': 'ProfileTammyB.html'},
     {'name': 'Darren T.', 'Question': ['Does anyone have a vegetarian jambalaya recipe?'], 'link':'forumAnswers9.html', 'keyword': ['vegetarian', 'jambalaya', 'recipe'], 'email': 'darren@gmail.com', 'profile': 'ProfileDarrenT.html'},
     {'name': 'Tom W.', 'Question': ['Tips for doubling a recipe?'], 'link':'forumAnswers10.html', 'keyword': ['tips', 'doubling', 'double', 'recipe'], 'email': 'tom@gmail.com', 'profile': 'ProfileTomW.html'},
-    {'name': 'Bob P.', 'Question': ['What are some good substitutes for vanilla extract?'], 'link':'forumAnswers1.html', 'keyword': ['vanilla', 'extract', 'substitute','substitutes'], 'email': 'bob@gmail.com', 'profile': 'ProfileBobP.html'},
+    {'name': 'Bob P.', 'Question': ['What are some good substitutes for vanilla extract?'], 'link':'forumAnswers11.html', 'keyword': ['vanilla', 'extract', 'substitute','substitutes'], 'email': 'bob@gmail.com', 'profile': 'ProfileBobP.html'},
 /*     {'name': 'Chloe M.', 'Question': ['How do you know if cheese has gone bad?'], 'link':'forumAnswers1.html', 'keyword': ['cheese', 'bad', 'cheeses'], 'email': 'chloe@gmail.com'},
     {'name': 'Chris J.', 'Question': ['Can you substitute baking soda for baking powder?'], 'link':'forumAnswers1.html', 'keyword': ['substitute', 'baking', 'baking soda', 'powder', 'baking powder'], 'email': 'chris@gmail.com'},
     {'name': 'Kylie K.', 'Question': ['How much water do I need to cook rice?'], 'link':'forumAnswers1.html', 'keyword': ['rice', 'water', 'cook', 'much'], 'email': 'kylie@gmail.com'},
@@ -46,7 +46,6 @@ input = localStorage.getItem("input").split(' ');
 var source   = $("#forumResultsTemplate").html();
 var template = Handlebars.compile(source);
 var parentDiv = $("#forumResults");
-var count = 0;
 
 
 /* new CODE */
@@ -70,7 +69,7 @@ for (var i = 0; i < forumDataTEMP.length; i++) { //goes through all data
                 //delete curData;
                 //forumDataTEMP[i].push("'name': 'blank', 'question': 'blank', 'keyword': ['blank']");
                 count = count + 1;
-                console.log(forumHtml);
+                //console.log(forumHtml);
                 //console.log(forumDataTEMP);
                 foundResult = true;
                 break;
@@ -81,6 +80,19 @@ for (var i = 0; i < forumDataTEMP.length; i++) { //goes through all data
           break;
         }
     }
+}
+
+var results = [
+    {'result': ["0 Results. Sorry, we couldn't find what you were looking for. Please try again!"]}
+]
+
+var source1   = $("#noResultsTemplate").html();
+var template = Handlebars.compile(source1);
+var parentDiv = $("#noResults");
+
+if (count == 0) {
+    var noResults = template(results[0]);
+    parentDiv.append(noResults);
 }
 
 })
