@@ -80,7 +80,7 @@ var userData = [
     }*/
 
     // Declare variables
-    var input = localStorage.getItem("input");
+    var input = localStorage.getItem("input").toLowerCase();
     var address = localStorage.getItem("address").toUpperCase();
     console.log(address);
     var source   = $("#entry-template").html();
