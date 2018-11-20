@@ -91,6 +91,7 @@ var userData = [
 
     var parentDiv = $("#templatedProjects");
 
+    var count = 0;
     for (var i = 0; i < userData.length; i++) {
       var curData = userData[i];
       if(curData["location"] == address ){
@@ -101,6 +102,7 @@ var userData = [
           if(curData["Ingredients"][x] == input){
             var curHtml = template(curData);
             parentDiv.append(curHtml);
+            count = count +1;
           }
         }
         //check for tool
@@ -111,11 +113,24 @@ var userData = [
             var curHtml = template(curData);
             console.log("append");
             parentDiv.append(curHtml);
+            count = count + 1;
           }
         }
       }
     }
 
+    var results = [
+      {'result': ["0 Results. Sorry, we couldn't find what you were looking for. Please try again!"]}
+  ]
+  
+  var source1   = $("#noResultsTemplate").html();
+  var template = Handlebars.compile(source1);
+  var parentDiv = $("#noResults");
+  
+  if (count == 0) {
+      var noResults = template(results[0]);
+      parentDiv.append(noResults);
+  }
 
   });
 

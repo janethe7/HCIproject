@@ -115,10 +115,6 @@
 			<script>
 			document.getElementById("result").innerHTML = localStorage.getItem("input");
 			</script>
-
-		<p>
-			Here are some neigbors who have what you're looking for!
-		</p>
 	</div>
 <!--	<div>
 		<p>
@@ -156,9 +152,14 @@
 		</a>
 	</div>-->
 
+	<p>
+			Here are some neigbors who have what you're looking for!
+		</p>
+
 	<!-- TEMPLATE FOR SEARCH RESULTS -->
 	<script id="entry-template" type="text/x-handlebars-template">
 			<div>
+
 			<p>
 				<a href={{html}}> {{name}}</a>
 				<br>{{location}}
@@ -175,6 +176,19 @@
 		      <!-- we will inject templated project HTML code into here -->
 	 		</div>
 
+			 <!-- No results section -->
+			 <script id="noResultsTemplate" type="text/x-handlebars-template">
+				<div class="noResultsTemplate">
+
+
+					<p>{{result}}</p>
+
+				</div>
+			</script>
+
+			<div id="noResults">
+			<!-- forum results goes here -->
+			</div>
 
 
 
