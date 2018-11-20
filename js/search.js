@@ -71,10 +71,7 @@ var userData = [
     // compile the template
     /*var source   = $("#entry-template").html();
     var template = Handlebars.compile(source);
-
     var parentDiv = $("#templatedProjects");
-
-
    // now iterate through the complexData list and keep appending:
     for (var i = 0; i < userData.length; i++) {
       var curData = userData[i];
@@ -83,7 +80,7 @@ var userData = [
     }*/
 
     // Declare variables
-    var input = localStorage.getItem("input");
+    var input = localStorage.getItem("input").toLowerCase();
     var address = localStorage.getItem("address").toUpperCase();
     console.log(address);
     var source   = $("#entry-template").html();
@@ -122,11 +119,11 @@ var userData = [
     var results = [
       {'result': ["0 Results. Sorry, we couldn't find what you were looking for. Please try again!"]}
   ]
-  
+
   var source1   = $("#noResultsTemplate").html();
   var template = Handlebars.compile(source1);
   var parentDiv = $("#noResults");
-  
+
   if (count == 0) {
       var noResults = template(results[0]);
       parentDiv.append(noResults);
@@ -139,9 +136,7 @@ var userData = [
       var input = $("#query").val();
       var address = $("#address").val();
       var template = Handlebars.compile(source);
-
       var parentDiv = $("#templatedProjects");
-
       for (var i = 0; i < userData.length; i++) {
         var curData = userData[i];
         if(curData[1] == address ){
@@ -169,12 +164,10 @@ var userData = [
     }
     alert("The location has been saved.");
 }
-
 function onError(error) {
     alert('code: '    + error.code    + '\n' +
           'message: ' + error.message + '\n');
 }
-
 function retrieveLocation(){
     var retrievedStringwParens = localStorage.getItem("carLoc");
     if(retrievedStringwParens == null){
@@ -188,31 +181,23 @@ function retrieveLocation(){
     var retrievedLatLng = new google.maps.LatLng(lat,lng);
     return retrievedLatLng;
 }
-
 function processForm(){
     var level = document.myform.level.value;
     var spot = document.myform.spot.value;
     var addInfo = document.myform.notes.value;
-
     localStorage.setItem("level", level);
     localStorage.setItem("spot", spot);
     localStorage.setItem("addInfo", addInfo);
     alert("Saved: " + localStorage.getItem("level") + ", " + localStorage.getItem("spot") + ", and " + localStorage.getItem("addInfo"));
 }
-
 function clearForm(){
     $('#myform').get(0).reset();
 }
-
 function retrieveFormInfo(){
     var level = localStorage.getItem("level");
     $("#level2").html("Level: " + level);
-
-
     var spot = localStorage.getItem("spot");
     $("#spot").html("Spot: " + spot);
-
-
     var notes = localStorage.getItem("addInfo");
     $("#notes").html("Notes: " + notes);
 }*/

@@ -11,13 +11,21 @@
 <body>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+		<img src="forum_results_pic.jpg" style='position:fixed;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		z-index:-1;'>
+
+
 		<div class="nav">
 			<div class="navigation">
-				<a class=left href="index.html">Home</a>
+				<a class=left href="index.html">Communal Cooking</a>
 				<container id="searchNav">
 					<form name="myform" id="myform" action="" method="get">
-						Find<input id="query" type="text" placeholder="Ingredients, recipes, tools..."></input>
-						Near <input id="address" type="text" placeholder="Current location">
+						Find<input id="query" type="text" placeholder="Ingredients, tools..."></input>
+						Near <input id="address" type="text" placeholder="City, State">
 						<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
 				</container>
 				<a class=right href="forum.html">Forum</a>
@@ -38,14 +46,12 @@
 			<script>
 				//var input = localStorage.getItem("query");
 				var address = localStorage.getItem("address");
-
 				function initMap() {
 					var latitude;
 				  var longitude;
 					var geocoder = new google.maps.Geocoder();
 					var address = localStorage.getItem("address");
 					geocoder.geocode( { 'address': address}, function(results, status) {
-
 					if (status == google.maps.GeocoderStatus.OK) {
 							latitude = results[0].geometry.location.lat();
 							localStorage.setItem( 'latitude', latitude);
@@ -55,18 +61,15 @@
 					});
 					var latitude = localStorage.getItem("latitude");
 					var longitude = localStorage.getItem('longitude');
-
 					latitude = localStorage.getItem("latitude");
 					longitude = localStorage.getItem("longitude");
 					alert(latitude);
-
 					// DO NOT DO THIS IN PRODUCTION CODE
 					// SANITIZE YOUR STRINGS IN LOCAL STORAGE BEFORE PARSING
 					var map = new google.maps.Map(document.getElementById('map'), {
 				  zoom: 8,
 				  center: {lat: parseFloat(latitude), lng: parseFloat(longitude)}
 				});
-
 			document.getElementById('submit').addEventListener('click', function() {
 			  geocodeAddress(geocoder, map);
 			});
