@@ -11,9 +11,17 @@
 <body>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+		<img src="forum_results_pic.jpg" style='position:fixed;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		z-index:-1;'>
+
+
 		<div class="nav">
 			<div class="navigation">
-				<a class=left href="index.html">Home</a>
+				<a class=left href="index.html">Communal Cooking</a>
 				<container id="searchNav">
 					<form name="myform" id="myform" action="" method="get">
 						Find<input id="query" type="text" placeholder="Ingredients, recipes, tools..."></input>
@@ -38,14 +46,12 @@
 			<script>
 				//var input = localStorage.getItem("query");
 				var address = localStorage.getItem("address");
-
 				function initMap() {
 					var latitude;
 				  var longitude;
 					var geocoder = new google.maps.Geocoder();
 					var address = localStorage.getItem("address");
 					geocoder.geocode( { 'address': address}, function(results, status) {
-
 					if (status == google.maps.GeocoderStatus.OK) {
 							latitude = results[0].geometry.location.lat();
 							localStorage.setItem( 'latitude', latitude);
@@ -55,18 +61,15 @@
 					});
 					var latitude = localStorage.getItem("latitude");
 					var longitude = localStorage.getItem('longitude');
-
 					latitude = localStorage.getItem("latitude");
 					longitude = localStorage.getItem("longitude");
 					alert(latitude);
-
 					// DO NOT DO THIS IN PRODUCTION CODE
 					// SANITIZE YOUR STRINGS IN LOCAL STORAGE BEFORE PARSING
 					var map = new google.maps.Map(document.getElementById('map'), {
 				  zoom: 8,
 				  center: {lat: parseFloat(latitude), lng: parseFloat(longitude)}
 				});
-
 			document.getElementById('submit').addEventListener('click', function() {
 			  geocodeAddress(geocoder, map);
 			});
@@ -105,17 +108,36 @@
 							<!-- forum results goes here -->
 							</div>
 
-							<div>
-								<p style="padding: 0px; margin-left: 75px;">Didn't find what you're searching for? We're sorry! Please try again!</p>
+							<!-- No results section -->
+							<script id="noResultsTemplate" type="text/x-handlebars-template">
+								<div class="noResultsTemplate">
+
+
+									<p style="padding: 0px; margin-left: 75px;">{{result}}</p>
+
+								</div>
+							</script>
+
+							<div id="noResults">
+							<!-- forum results goes here -->
 							</div>
+
+							<!-- <div>
+								<p style="padding: 0px; margin-left: 75px;">Didn't find what you're searching for? We're sorry! Please try again!</p>
+							</div> -->
 					</div>
 				</div>
 
 				<div class="rightColForum">
 					<h4 style="margin: 0px;">Frequently asked questions</h4>
 					</h3>
-					<p class="forumLinks"><a href="forumAnswers2.html">What are some good egg free cookie recipes?</a>
-						<br><a href="forumAnswers1.html">How to make egg whites fluffy without a hand-mixer?</a></p>
+					<p class="forumLinks">
+						<a href="forumAnswers8.html">What are some good gluten free banana bread recipes?</a>
+						<br><a href="forumAnswers1.html">What kind of pan should I use to sear steak?</a>
+						<br><a href="forumAnswers5.html">What are some must have knives??</a>
+						<br><a href="forumAnswers9.html">Does anyone have a vegetarian jambalaya recipe?</a>
+						<br><a href="forumAnswers10.html">Tips for doubling a recipe?</a>
+					</p>
 				</div>
 			</div>
 

@@ -43,21 +43,18 @@
 			var address = localStorage.getItem("address");
 				//var address = retrieveSearchInfo();
 				/*geocoder.geocode( { 'address': address}, function(results, status) {
-
 					if (status == google.maps.GeocoderStatus.OK) {
 	    			var latitude = results[0].geometry.location.lat();
 	    			var longitude = results[0].geometry.location.lng();
 	    			alert(latitude);
 	    		}
 				});*/
-
 			function initMap() {
 				var latitude;
 			  var longitude;
 				var geocoder = new google.maps.Geocoder();
 				var address = localStorage.getItem("address");
 				geocoder.geocode( { 'address': address}, function(results, status) {
-
 				if (status == google.maps.GeocoderStatus.OK) {
 						latitude = results[0].geometry.location.lat();
 						localStorage.setItem( 'latitude', latitude);
@@ -67,10 +64,8 @@
 				});
 				var latitude = localStorage.getItem("latitude");
 				var longitude = localStorage.getItem('longitude');
-
 				latitude = localStorage.getItem("latitude");
 				longitude = localStorage.getItem("longitude");
-
 				// DO NOT DO THIS IN PRODUCTION CODE
 				// SANITIZE YOUR STRINGS IN LOCAL STORAGE BEFORE PARSING
 				var map = new google.maps.Map(document.getElementById('map'), {
@@ -87,12 +82,10 @@
         //var geocoder = new google.maps.Geocoder();
 			/*	address = document.getElementById('address').value;
 				localStorage.setItem( 'address', address);*/
-
         document.getElementById('submit').addEventListener('click', function() {
           geocodeAddress(geocoder, map);
         });
       }
-
       /*function geocodeAddress(geocoder, resultsMap) {
 				//var address = localStorage.getItem('customAddress');
         var address = document.getElementById('address').value;
@@ -115,10 +108,6 @@
 			<script>
 			document.getElementById("result").innerHTML = localStorage.getItem("input");
 			</script>
-
-		<p>
-			Here are some neigbors who have what you're looking for!
-		</p>
 	</div>
 <!--	<div>
 		<p>
@@ -156,9 +145,14 @@
 		</a>
 	</div>-->
 
+	<p>
+			Here are some neigbors who have what you're looking for!
+		</p>
+
 	<!-- TEMPLATE FOR SEARCH RESULTS -->
 	<script id="entry-template" type="text/x-handlebars-template">
 			<div>
+
 			<p>
 				<a href={{html}}> {{name}}</a>
 				<br>{{location}}
@@ -175,6 +169,19 @@
 		      <!-- we will inject templated project HTML code into here -->
 	 		</div>
 
+			 <!-- No results section -->
+			 <script id="noResultsTemplate" type="text/x-handlebars-template">
+				<div class="noResultsTemplate">
+
+
+					<p>{{result}}</p>
+
+				</div>
+			</script>
+
+			<div id="noResults">
+			<!-- forum results goes here -->
+			</div>
 
 
 
