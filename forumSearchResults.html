@@ -105,9 +105,23 @@
 							<!-- forum results goes here -->
 							</div>
 
-							<div>
-								<p style="padding: 0px; margin-left: 75px;">Didn't find what you're searching for? We're sorry! Please try again!</p>
+							<!-- No results section -->
+							<script id="noResultsTemplate" type="text/x-handlebars-template">
+								<div class="noResultsTemplate">
+
+
+									<p style="padding: 0px; margin-left: 75px;">{{result}}</p>
+
+								</div>
+							</script>
+
+							<div id="noResults">
+							<!-- forum results goes here -->
 							</div>
+
+							<!-- <div>
+								<p style="padding: 0px; margin-left: 75px;">Didn't find what you're searching for? We're sorry! Please try again!</p>
+							</div> -->
 					</div>
 				</div>
 

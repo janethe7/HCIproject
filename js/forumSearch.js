@@ -46,7 +46,6 @@ input = localStorage.getItem("input").split(' ');
 var source   = $("#forumResultsTemplate").html();
 var template = Handlebars.compile(source);
 var parentDiv = $("#forumResults");
-var count = 0;
 
 
 /* new CODE */
@@ -70,7 +69,7 @@ for (var i = 0; i < forumDataTEMP.length; i++) { //goes through all data
                 //delete curData;
                 //forumDataTEMP[i].push("'name': 'blank', 'question': 'blank', 'keyword': ['blank']");
                 count = count + 1;
-                console.log(forumHtml);
+                //console.log(forumHtml);
                 //console.log(forumDataTEMP);
                 foundResult = true;
                 break;
@@ -81,6 +80,19 @@ for (var i = 0; i < forumDataTEMP.length; i++) { //goes through all data
           break;
         }
     }
+}
+
+var results = [
+    {'result': ["0 Results. Sorry, we couldn't find what you were looking for. Please try again!"]}
+]
+
+var source1   = $("#noResultsTemplate").html();
+var template = Handlebars.compile(source1);
+var parentDiv = $("#noResults");
+
+if (count == 0) {
+    var noResults = template(results[0]);
+    parentDiv.append(noResults);
 }
 
 })
