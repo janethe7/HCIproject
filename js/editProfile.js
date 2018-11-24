@@ -13,9 +13,6 @@ console.log(userTools);
     localStorage.setItem("tool", tool);
     userTools.push(tool);
 
-
-
-
 var AddTask = function() {
 		var containerDiv = document.createElement( 'div' );
     var paragraph = document.createElement( 'p' );
@@ -34,6 +31,7 @@ var AddTask = function() {
         btnSave.style.display = 'inline-block';
         btnEdit.style.display = 'none';
         paragraph.innerHTML = editInput.value;
+        document.getElementById("newTask").innerHTML = localStorage.getItem("newTask");
     });
     btnSave.addEventListener( 'click',function(){
         editInput.style.display = 'none';

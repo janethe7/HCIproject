@@ -10,15 +10,17 @@ function processSignup(){
     var username = $("#name").val();
     var location = $("#location").val();
     var password1 = $("#password2").val();
-    var confirmPassword = $("#password").val();
+    var confirmPassword = $("#password1").val();
 
     localStorage.setItem("username", username);
     localStorage.setItem("location", location);
-    
-if (password1 != confirmPassword) {
-    alert('Your passwords do not match. Please re-enter your passwords and try again!');
-}
 
+if (password1 !== confirmPassword) {
+    alert('Passwords do not match. Please try again!');
+}
+else {
+    window.open('profile.html');
+}
 }
 
 function addTool(){
@@ -28,8 +30,6 @@ function addTool(){
     userTools.push(tool);
 }
 
-
-
 function clearSearch(){
     $('#loginform').get(0).reset();
 }
@@ -38,9 +38,9 @@ function retrieveSearchInfo(){
     var input = localStorage.getItem("username");
     $("#username").html("Input: " + username);
 
-    /*var address = localStorage.getItem("address");
+    /* var address = localStorage.getItem("address");
     $("#address").html("Address: " + address);
-    return address;*/
+    return address; */
 }
 
 var userData = [
