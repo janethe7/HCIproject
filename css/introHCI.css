@@ -58,11 +58,12 @@ header {
 		font-family: "Autumn in November", "Futura", Verdana, serif;
 		font-size: 25px;
 		color: #B03D40;
-		padding: 35px 25px;
+		padding: 25px 25px;
 		text-decoration: none;
 		display: inline;
 		font-weight: bolder;
 		margin-top: -15px;
+		padding-top: 45px;
 }
 
 .navigationHome .right {
@@ -92,10 +93,11 @@ header {
 		font-family: "Autumn in November", "Futura", Verdana, serif;
 		font-size: 25px;
 		color: #B03D40;
-		padding: 35px 15px;
+		padding: 25px 15px;
 		text-decoration: none;
 		display: inline;
 		margin-top: -15px;
+		padding-top: 45px;
 }
 
 .navigation .right {
@@ -219,6 +221,7 @@ header {
 }
 
 .searchbar #submit {
+	text-align: center;
   float: right;
   width: 80px;
 	height: 29px;

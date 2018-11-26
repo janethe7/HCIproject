@@ -6,7 +6,7 @@ var userTools = [];
 //localStorage.setItem("tool", newtask);
 userTools[0] = newtask;
 userTools.push(newtask);
-console.log(userTools);
+//console.log(userTools);
 
     var tool = $("#newTask").val();
 
