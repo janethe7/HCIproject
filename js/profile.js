@@ -29,7 +29,7 @@ function processSignup(){
     var password1 = $("#password2").val();
     var confirmPassword = $("#password1").val();
 
-    localStorage.setItem("name", name);
+/*    localStorage.setItem("name", name);
     localStorage.setItem("location", location);
     localStorage.setItem("email", email);
     localStorage.setItem("password2", password2);
@@ -45,14 +45,14 @@ function processSignup(){
        // get the last insert id
        console.log(`A row has been inserted with rowid ${this.lastID}`);
      });
+*/
 
-
-if (password1 !== confirmPassword) {
-    alert('Passwords do not match. Please try again!');
-}
-else {
-    window.open('profile.html');
-}
+  if (password1 !== confirmPassword) {
+      alert('Passwords do not match. Please try again!');
+  }
+  else {
+      window.open('profile.html');
+  }
 }
 
 function addTool(){
