@@ -656,13 +656,16 @@ body
 
 #Tools {
 	background-color: white;
+	opacity: .85;
 }
 
 #Ingredients {
 	background-color: white;
+	opacity: .85;
 }
 
 #Recipes {
 	background-color: white;
+	opacity: .85;
 }
 
