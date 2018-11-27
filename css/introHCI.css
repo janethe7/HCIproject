@@ -588,6 +588,26 @@ body
 	outline: none;
 }
 
+#myText3 {
+	float: center;
+	padding: 0px;
+	font-size: 20px;
+	height: 21px;
+	width: 300px;
+	border: 1px solid gray;
+	color: #bfbfbf;
+	background: white;
+	display: inline-block;
+	padding-left: 6px;
+}
+
+#myText3 {
+	font-size: 15px;
+	font-family: "Futura", Verdana, serif;
+	color: black;
+	outline: none;
+}
+
 #forumComment {
 	width: 80px;
 	  height: 24px;
