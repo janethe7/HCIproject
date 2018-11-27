@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>What kind of pan should I use to sear steak?</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/introHCI.css" rel="stylesheet" />
+</head>
+
+<header>
+	<div class="nav">
+		<div class="navigation">
+			<a class=left href="index.html">Communal Cooking</a>
+			<container id="searchNav">
+				<form name="myform" id="myform" action="" method="get">
+					Find<input id="query" type="text" placeholder="Ingredients, tools..."></input>
+					Near <input id="address" type="text" placeholder="City, State">
+					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
+			</container>
+			<a class=right href="forum.html">Forum</a>
+			<a class=right href="profile.html">Profile</a>
+		</div>
+	</div>
+</header>
+
+<body>
+
+    <div class="containerForumAnswers">
+        <div class="leftColForum">
+            <h3 style="margin-left: 75px" id="result"></h3>
+			<script>
+                document.getElementById("result").innerHTML = localStorage.getItem("input");
+                </script>
+
+        </div>
+
+        <div class="rightColForum">
+            <h4>Check out some frequently asked questions here!</h4>
+            </h3>
+            <p><a href="forumAnswers3.html">How to make egg whites fluffy without a hand-mixer?</a>
+                <br><a href="forumAnswers6.html">What are some good egg free recipes?</a>
+                <br><a href="forumAnswers7.html">How to cook pasta.</a>
+                <br><a href="forumAnswers4.html">Is it safe to cook chicken in a slow cooker?</a>
+                <br><a href="forumAnswers5.html">What are the must have knives?</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/handlebars-v4.0.11.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/forumSearch.js"></script>
+    <script src="js/forumPost.js"></script>
+
+
+
+</body>
+</html>
