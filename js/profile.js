@@ -51,7 +51,7 @@ function processSignup(){
       alert('Passwords do not match. Please try again!');
   }
   else {
-      window.open("https://janethe7.github.io/HCIproject/profile.html", "_self");
+      window.location = "profile.html";
   }
 }
 
