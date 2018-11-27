@@ -619,3 +619,35 @@ body
 	border-left: none; /* Prevent double borders */
 	cursor: pointer;
 }
+
+#forumQuestionComment {
+	float: center;
+	padding: 0px;
+	font-size: 80px;
+	height: 62px;
+	width: 500px;
+	border: 1px solid gray;
+	color: #bfbfbf;
+	background: white;
+	display: inline-block;
+	padding-left: 6px;
+	font-size: 20px;
+	font-family: "Futura", Verdana, serif;
+	color: black;
+	outline: none;
+}
+
+.forumInput #submit {
+	text-align: center;
+  width: 80px;
+	height: 29px;
+  padding: 18px 38px;
+	margin-left: -20px;
+	background-color: #6ca2a0;
+	text-decoration: none;
+	color: black;
+  font-size: 20px;
+	font-family: "Futura", Verdana, serif;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
