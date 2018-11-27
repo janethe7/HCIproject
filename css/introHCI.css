@@ -653,3 +653,16 @@ body
   border-left: none; /* Prevent double borders */
   cursor: pointer;
 }
+
+#Tools {
+	background-color: white;
+}
+
+#Ingredients {
+	background-color: white;
+}
+
+#Recipes {
+	background-color: white;
+}
+

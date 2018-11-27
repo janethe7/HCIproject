@@ -57,7 +57,6 @@ var userData = [
     {'name': 'Amy P.', 'location': 'SAN JOSE, CA', 'Ingredients': ['white rice', 'cumin', 'pancake mix','ginger','white wine','quinoa'], 'Tools': ['grater', 'tongs', 'cast iron', 'spatula'], 'html': 'ProfileAmyP.html'},
     {'name': 'Joe C.', 'location': 'SAN DIEGO, CA', 'Ingredients': ['white rice', 'pancake mix', 'garlic', 'cinnamon','thyme','eggs'], 'Tools': ['meat thermometer', 'food processor', 'cast iron', '13-inch frying pan','toaster','salad spinner'], 'html': 'ProfileJoeC.html'},
     {'name': 'Jenny R.', 'location': 'SAN JOSE, CA', 'Ingredients': ['white rice', 'garlic', 'soy sauce', 'eggs'], 'Tools': ['cast iron', '13-inch frying pan', 'whisk', 'rice cooker'], 'html': 'ProfileJennyR.html'},
-//location updated starting now
     {'name': 'Bob P.', 'location': 'SAN DIEGO, CA', 'Ingredients': ['baking soda', 'corn starch', 'cinnamon', 'flour'], 'Tools': ['PAM', 'pie pan', 'cookie sheets'], 'html': 'ProfileBobP.html'},
     {'name': 'Gabby H.', 'location': 'SAN FRANCISCO, CA', 'Ingredients': ['vegetable oil', 'agave', 'brown sugar'], 'Tools': ['can opener', 'cheese cloth', 'measuring spoons','knife sharpener'], 'html': 'ProfileGabbyH.html'},
     {'name': 'Darren T.', 'location': 'SAN FRANCISCO, CA', 'Ingredients': ['white rice', 'curry', 'paprika', 'cumin'], 'Tools': ['Nutribullet', 'food processor', 'can opener', 'mixing bowl'], 'html': 'ProfileDarrenT.html'},
