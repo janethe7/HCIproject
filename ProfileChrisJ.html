@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>Profile Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/introHCI.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="nav">
+    <div class="navigation">
+      <a class=left href="index.html">Home</a>
+      <container id="searchNav">
+        Find <input type="text" placeholder="Ingredients, recipes, tools...">
+        Near <input type="text" placeholder="Current location">
+        <a href="mapsPage.html"><button>Search</button></a>
+      </container>
+      <a class=right href="profile.html">Profile</a>
+      <a class=right href="forum.html">Forum</a>
+    </div>
+  </div>
+
+  <div>
+    <div class = "profileRow1">
+      <div class = "column left" id = "pic">
+        <img class="img-thumbnail img-fluid" src="profilePicIcon.png"/>
+      </div>
+      <div class = "column right" id = "contact">
+        <h1 id="profileName">Chris J.</h1>
+        <p id="profileLocation">San Diego, CA</p>
+        <br>
+        <a href="mailto:chris@gmail.com">
+          <img id = "messageIcon" src = "email-icon.png" style = "cursor:pointer">
+        </a>
+      </div>
+    </div>
+
+    <div class="profileRow2">
+
+      <div class="column2" id = "Tools">
+        <div class = "titleProf">
+          <h3>My Tools</h3>
+        </div>
+        <ul id = "mytools" style="list-style-type:disc">
+          <li>whisk</li>
+          <li>measuring cup</li>
+          <li>rice bowl</li>
+          <li>ladle</li>
+        </ul>
+      </div>
+
+      <div class="column2">
+        <div class = "titleProf">
+          <h3>My Ingredients</h3>
+        </div>
+        <ul id = "myingredients" style="list-style-type:disc">
+            <li>rice</li>
+            <li>rosemary</li>
+            <li>garlic</li>
+            </ul>
+      </div>
+
+      <div class="column2">
+        <div class = "titleProf">
+          <h3>My Recipes</h3>
+        </div>
+        <ul id = "myrecipes" style="list-style-type:disc">
+          <li>Chicken Noodle Soup</li>
+            <li>Vegan Pizza</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/handlebars-v4.0.11.js"></script>
+  <script src="js/editProfile.js"></script>
+  <script src="js/editProfile2.js"></script>
+  <script src="js/editProfile3.js"></script>
+  <script src="js/profile.js"></script>
+
+</body>
+</html>
