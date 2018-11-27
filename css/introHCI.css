@@ -640,8 +640,10 @@ body
 .forumInput #submit {
 	text-align: center;
   width: 80px;
-	height: 29px;
-  padding: 18px 38px;
+	height: 35px;
+  padding: 19px 39px;
+	padding-top: 18px;
+	padding-bottom: 20px;
 	margin-left: -20px;
 	background-color: #6ca2a0;
 	text-decoration: none;
