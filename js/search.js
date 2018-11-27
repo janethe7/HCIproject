@@ -53,15 +53,22 @@ function retrieveSearchInfo(){
 	}*/
 
 var userData = [
-    {'name': 'Steve', 'location': 'SAN DIEGO, CA', 'Ingredients': ['rice', 'sugar', 'cinnamon', 'baking soda'], 'Tools': ['spatula', 'strainer', 'pan'], 'html': 'ProfileSteveM.html'},
-    {'name': 'Amy', 'location': 'SAN JOSE, CA', 'Ingredients': ['black pepper', 'sugar', 'saffron', 'baking soda'], 'Tools': ['pot', 'strainer', 'blender', 'hand-mixer'], 'html': 'ProfileAmyP.html'},
-    {'name': 'Joe', 'location': 'SAN DIEGO, CA', 'Ingredients': ['rice', 'flour', 'cinnamon', 'vanilla extract'], 'Tools': ['spatula', 'pot', 'whisk', 'can-opener'], 'html': 'ProfileJoeC.html'},
-    {'name': 'Jenny', 'location': 'SAN JOSE, CA', 'Ingredients': ['honey', 'clove', 'maple syrup', 'agave'], 'Tools': ['food processor', 'crock pot', 'whisk', 'juicer'], 'html': 'ProfileJennyR.html'},
-    {'name': 'Bob', 'location': 'SAN DIEGO, CA', 'Ingredients': ['clove', 'salt', 'black pepper', 'vinegar'], 'Tools': ['measuring spoon', 'tongs', 'grater'], 'html': 'ProfileBobP.html'},
-    {'name': 'Gabby', 'location': 'SAN FRANCISCO, CA', 'Ingredients': ['vegetable oil', 'agave', 'brown sugar', 'nutmeg'], 'Tools': ['measuring cup', 'rolling pin', 'peeler'], 'html': 'ProfileGabbyH.html'},
-    {'name': 'Darren', 'location': 'SAN FRANCISCO, CA', 'Ingredients': ['cumin', 'paprika', 'hot sauce', 'vanilla extract'], 'Tools': ['crock pot', 'masher', 'pan', 'whisk'], 'html': 'ProfileDarrenT.html'},
-    {'name': 'Jack', 'location': 'SAN DIEGO, CA', 'Ingredients': ['honey', 'nutmeg', 'curry', 'garlic'], 'Tools': ['food processor', 'measuring spoon', 'wok', 'peeler'], 'html': 'ProfileJackQ.html'},
-
+    {'name': 'Steve M.', 'location': 'SAN DIEGO, CA', 'Ingredients': ['rice', 'sugar', 'cinnamon', 'baking soda'], 'Tools': ['spatula', 'strainer', 'pan'], 'html': 'ProfileSteveM.html'},
+    {'name': 'Amy P.', 'location': 'SAN JOSE, CA', 'Ingredients': ['white rice', 'cumin', 'pancake mix','ginger','white wine','quinoa'], 'Tools': ['grater', 'tongs', 'cast iron', 'spatula'], 'html': 'ProfileAmyP.html'},
+    {'name': 'Joe C.', 'location': 'SAN DIEGO, CA', 'Ingredients': ['white rice', 'pancake mix', 'garlic', 'cinnamon','thyme','eggs'], 'Tools': ['meat thermometer', 'food processor', 'cast iron', '13-inch frying pan','toaster','salad spinner'], 'html': 'ProfileJoeC.html'},
+    {'name': 'Jenny R.', 'location': 'SAN JOSE, CA', 'Ingredients': ['white rice', 'garlic', 'soy sauce', 'eggs'], 'Tools': ['cast iron', '13-inch frying pan', 'whisk', 'rice cooker'], 'html': 'ProfileJennyR.html'},
+//location updated starting now
+    {'name': 'Bob P.', 'location': 'SAN DIEGO, CA', 'Ingredients': ['baking soda', 'corn starch', 'cinnamon', 'flour'], 'Tools': ['PAM', 'pie pan', 'cookie sheets'], 'html': 'ProfileBobP.html'},
+    {'name': 'Gabby H.', 'location': 'SAN FRANCISCO, CA', 'Ingredients': ['vegetable oil', 'agave', 'brown sugar'], 'Tools': ['can opener', 'cheese cloth', 'measuring spoons','knife sharpener'], 'html': 'ProfileGabbyH.html'},
+    {'name': 'Darren T.', 'location': 'SAN FRANCISCO, CA', 'Ingredients': ['white rice', 'curry', 'paprika', 'cumin'], 'Tools': ['Nutribullet', 'food processor', 'can opener', 'mixing bowl'], 'html': 'ProfileDarrenT.html'},
+    {'name': 'Jack Q.', 'location': 'SAN DIEGO, CA', 'Ingredients': ['rice', 'brown rice', 'eggs', 'white vinegar','flour','cinnamon'], 'Tools': ['rice cooker', 'can opener', 'knife sharpener', 'toaster oven'], 'html': 'ProfileJackQ.html'},
+    {'name': 'Johnny G.', 'location': 'SAN JOSE, CA', 'Ingredients': ['rice', 'eggs', 'corn starch', 'paprika','flour'], 'Tools': ['whisk', 'Nutribullet', 'steamer rack', 'sushi roller mat'], 'html': 'ProfileJohnnyG.html'},
+    {'name': 'Tammy B.', 'location': 'SAN JOSE, CA', 'Ingredients': ['half & half', 'thyme', 'pesto', 'frozen corn'], 'Tools': ['steamer rack', 'measuring cup', 'steamer', 'peeler'], 'html': 'ProfileTammyB.html'},
+    {'name': 'Tom W.', 'location': 'SAN DIEGO, CA', 'Ingredients': ['white rice', 'corn starch', 'baking soda', 'flour'], 'Tools': ['toaster oven', 'knife sharpener'], 'html': 'ProfileTomW.html'},
+    {'name': 'Chloe M.', 'location': 'SAN JOSE, CA', 'Ingredients': ['half & half', 'thyme', 'curry', 'garlic'], 'Tools': ['food processor', 'whisk', 'baking sheets', 'peeler'], 'html': 'ProfileChloeM.html'},
+    {'name': 'Chris J.', 'location': 'SAN DIEGO, CA', 'Ingredients': ['rice', 'rosemary', 'garlic'], 'Tools': ['whisk', 'measuring cup', 'rice bowl', 'ladle'], 'html': 'ProfileChrisJ.html'},
+    {'name': 'Kylie K.', 'location': 'LOS ANGELES, CA', 'Ingredients': ['avocados', 'lasagna pasta', 'sugar', 'flour','chocolate chips'], 'Tools': ['whisk', 'Nutribullet', 'ice cream scoop', 'crockpot'], 'html': 'ProfileKylieK.html'},
+    {'name': 'Kim L.', 'location': 'LOS ANGELES, CA', 'Ingredients': ['wheat bread', 'eggs', 'brown sugar', 'flour'], 'Tools': ['measuring cup', 'dough roller', 'tongs', 'wine opener','clay pot'], 'html': 'ProfileKimL.html'},
   ]
 
   // Call this function when the page loads (the "ready" event)
