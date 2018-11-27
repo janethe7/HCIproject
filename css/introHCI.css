@@ -485,7 +485,7 @@ body
 	float: left;
 	width: 300px;
 	height: 150px;
-	background-color: #6ca2a0;
+	background-color: #ccdfde;
 	margin-top: -30px;
 }
 
@@ -498,20 +498,47 @@ body
 	margin-top: -30px;
 }
 
+.leftForum a {
+
+	/*margin-top: 20px;
+	background-color: #6ca2a0;
+	width: 180px;
+	margin-left: 50px;
+	padding-left: 10px;
+	border-radius: 25px;
+	box-shadow: 2px 2px #888888;*/
+	text-decoration: none;
+
+}
+
+
+.leftForum h4:hover{
+	color: white;
+}
+
 .leftForum h4 {
 	font-family: "Futura", Verdana, serif;
 	font-size: 40px;
 	color: black;
-	padding-left: 45px;
+	/*padding-left: 25px;
 	padding-top: 15px;
-	margin-top: 0px;
+	margin-top: 0px;*/
+	text-decoration: none;
+	margin-top: 20px;
+	background-color: #6ca2a0;
+	width: 180px;
+	margin-left: 50px;
+	padding-left: 15px;
+	border-radius: 25px;
+	box-shadow: 2px 2px #888888;
+	text-decoration: none;
 }
 
 .rightForum h4 {
 	font-family: "Futura", Verdana, serif;
 	font-size: 25px;
 	color: black;
-	padding-left: 25px;
+	padding-left: 75px;
 	padding-top: 15px;
 	margin-top: 0px;
 }
@@ -519,7 +546,7 @@ body
 .rightForum a {
 	font-family: "Futura", Verdana, serif;
 	font-size: 15px;
-	padding-left: 25px;
+	padding-left: 75px;
 	margin-top: 0px;
 	padding-bottom: 50px;
 }
