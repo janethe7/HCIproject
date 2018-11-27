@@ -620,7 +620,7 @@ body
 	cursor: pointer;
 }
 
-#forumQuestionComment {
+.forumQuestionComment {
 	float: center;
 	padding: 0px;
 	font-size: 80px;
