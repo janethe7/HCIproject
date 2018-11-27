@@ -51,7 +51,7 @@ function processSignup(){
       alert('Passwords do not match. Please try again!');
   }
   else {
-      window.location = "profile.html";
+      window.open("profile.html");
   }
 }
 
