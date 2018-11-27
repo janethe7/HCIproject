@@ -122,6 +122,17 @@
 							<!-- forum results goes here -->
 							</div>
 
+							<br>
+
+							<div class="forumInput">
+								<form name="forumPost" id="forumPost" action="" method="get">
+										Find <input id="myPost" type="text" placeholder="Post your question...">
+										<!--<a href="mapsPage.html"><button>Search</button></a>
+										<input id="submit" type="button" value="Search" onclick="processSearch();" href="mapsPage.html">-->
+										<a href="forumPost.html" data-role="button" id="submit" onclick="makeForum();" value="Search">Search</a>
+								</container>
+							</div>
+
 							<!-- <div>
 								<p style="padding: 0px; margin-left: 75px;">Didn't find what you're searching for? We're sorry! Please try again!</p>
 							</div> -->
@@ -141,10 +152,14 @@
 				</div>
 			</div>
 
+
+
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/handlebars-v4.0.11.js"></script>
 	<script src="js/forumSearch.js"></script>
 	<script src="js/search.js"></script>
+	<script src="js/forumPost.js"></script>
+
 
 </body>
