@@ -517,7 +517,8 @@ body
 	text-decoration: none;
 	margin-top: 20px;
 	background-color: #6ca2a0;
-	width: 180px;
+	/*width: 230px;*/
+	width: 50%;
 	margin-left: 50px;
 	padding-left: 25px;
 	border-radius: 25px;
