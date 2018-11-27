@@ -27,11 +27,24 @@
 <body>
 
     <div class="containerForumAnswers">
+			<a href="profile.html"><h3 style="padding: 0px; margin-left: 0px">Me</h3></a>
+
         <div class="leftColForum">
             <h3 style="margin-left: 75px" id="result"></h3>
 			<script>
                 document.getElementById("result").innerHTML = localStorage.getItem("input");
                 </script>
+
+								<!-- Comment Box 1 -->
+								<p id="demo1"></p>
+								<input type="text" id="myText" placeholder="Type your comment here...">
+								<button id="forumComment" input type='button' / onclick="myFunction()">Comment</button>
+								<script>
+										function myFunction() {
+										var x = document.getElementById("myText").value;
+										document.getElementById("demo1").innerHTML = x;
+										}
+								</script>
 
         </div>
 
@@ -52,6 +65,8 @@
     <script src="js/search.js"></script>
     <script src="js/forumSearch.js"></script>
     <script src="js/forumPost.js"></script>
+		<script src="js/profile.js"></script>
+
 
 
 
