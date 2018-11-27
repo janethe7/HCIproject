@@ -150,6 +150,7 @@ header {
 		height: 25px;
 		color: black;
 		margin-top: -6px;
+		outline: none;
 }
 
 .navigation #submit {
@@ -202,8 +203,9 @@ header {
 .searchbar placeholder {
     float: center;
     padding: 6px;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 		margin-right: 80px;
+		display: inline;
 }
 
 
@@ -218,6 +220,8 @@ header {
 		font-family: "Futura", Verdana, serif;
 		color: black;
 		font-weight: lighter;
+		display: inline;
+		outline: none;
 }
 
 .searchbar #submit {
