@@ -33,10 +33,10 @@ header {
 
 .info {
 	text-align: center;
-	margin-top: 200px;
 	font-size: 30px;
 	color: white;
 	font-family: "Futura", Verdana, serif;
+	margin-top: 100px;
 }
 
 .nav {
@@ -186,7 +186,7 @@ header {
 .searchbar {
 		float: center;
 		padding: 0px;
-		margin-top: 0px;
+		margin-top: -100px;
 		margin-right: 100px;
 		margin-left: 180px;
 		font-size: 20px;
@@ -471,4 +471,55 @@ body
 	font-size: 12px;
 	cursor: pointer;
 	border-radius: 8px;
+}
+
+.descriptionForum {
+	text-align: center;
+	margin-top: 130px;
+	font-size: 30px;
+	color: white;
+	font-family: "Futura", Verdana, serif;
+}
+
+.leftForum {
+	float: left;
+	width: 300px;
+	height: 150px;
+	background-color: #6ca2a0;
+	margin-top: -30px;
+}
+
+
+.rightForum {
+	float: right;
+	width: 1057px;
+	background-color: #ccdfde;
+	height: 150px;
+	margin-top: -30px;
+}
+
+.leftForum h4 {
+	font-family: "Futura", Verdana, serif;
+	font-size: 40px;
+	color: black;
+	padding-left: 45px;
+	padding-top: 15px;
+	margin-top: 0px;
+}
+
+.rightForum h4 {
+	font-family: "Futura", Verdana, serif;
+	font-size: 25px;
+	color: black;
+	padding-left: 25px;
+	padding-top: 15px;
+	margin-top: 0px;
+}
+
+.rightForum a {
+	font-family: "Futura", Verdana, serif;
+	font-size: 15px;
+	padding-left: 25px;
+	margin-top: 0px;
+	padding-bottom: 50px;
 }
