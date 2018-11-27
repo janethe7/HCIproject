@@ -70,10 +70,13 @@
                     <button id="forumComment" input type='button' / onclick="myFunction2()">Comment</button>
                     <script>
                         function myFunction2() {
-                        var y = document.getElementById("myText2").value;
-                        document.getElementById("demo2").innerHTML = y;
+                            var comment2 = $("#myText2").val();
+                        localStorage.setItem("comment2", comment2);
+                        
+                        document.getElementById("demo2").innerHTML = comment2;
                         }
                     </script>
+
                 </div>
         </div>
 

@@ -27,17 +27,17 @@
 <body>
 
     <div class="containerForumAnswers">
-			<a href="profile.html"><h3 style="padding: 0px; margin-left: 0px">Me</h3></a>
+			<a href="profile.html"><h3 style="padding: 0px; margin-left: 75px;">Me</h3></a>
 
         <div class="leftColForum">
-            <h3 style="margin-left: 75px" id="result"></h3>
+            <h3 style="margin-left: 75px;" id="result"></h3>
 			<script>
                 document.getElementById("result").innerHTML = localStorage.getItem("input");
-                </script>
-
+				</script>
+				
 								<!-- Comment Box 1 -->
-								<p id="demo1"></p>
-								<input type="text" id="myText" placeholder="Type your comment here...">
+								<p style="margin-left: 75px;" id="demo1"></p>
+								<input style="margin-left: 75px;" type="text" id="myText" placeholder="Type your comment here...">
 								<button id="forumComment" input type='button' / onclick="myFunction()">Comment</button>
 								<script>
 										function myFunction() {
