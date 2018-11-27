@@ -29,12 +29,12 @@ function processSignup(){
     var password1 = $("#password2").val();
     var confirmPassword = $("#password1").val();
 
-/*    localStorage.setItem("name", name);
+   localStorage.setItem("name", name);
     localStorage.setItem("location", location);
     localStorage.setItem("email", email);
     localStorage.setItem("password2", password2);
 
-    const sqlite3 = require('sqlite3').verbose();
+  /*  const sqlite3 = require('sqlite3').verbose();
 
     let db = new sqlite3.Database('../js/userDB.db');
 
