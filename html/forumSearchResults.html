@@ -22,8 +22,17 @@
             <p>
                 Have another question?
             </p>
-			<input type="text" placeholder="Type your question here...">
-			<button type="submit"><i class="fa fa-search">Search</i></button>
+			<input id="forumPost" type="text" placeholder="Type your question here...">
+            <button type="submit"><i class="fa fa-search">Search</i></button>
+            <script>
+                var input = document.getElementById("forumPost");
+                input.addEventListener("keyup", function(event) {
+                event.preventDefault();
+                if (event.keyCode === 13) {
+                document.getElementById("submit").click();
+                }
+                });
+            </script>
         </div>
     <div>
         <h4>

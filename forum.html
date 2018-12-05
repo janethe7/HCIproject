@@ -17,6 +17,15 @@
 					Find<input id="query" type="text" placeholder="Ingredients, tools..."></input>
 					Near <input id="address" type="text" placeholder="City, State">
 					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
+					<script>
+						var input = document.getElementById("address");
+						input.addEventListener("keyup", function(event) {
+							event.preventDefault();
+							if (event.keyCode === 13) {
+								document.getElementById("submit").click();
+							}
+						});
+						</script>
 			</container>
 			<a class=right href="forum.html">Forum</a>
 			<a class=right href="profile.html">Profile</a>
@@ -38,7 +47,16 @@
 		<div class="searchbar">
 				<form name="myform2" id="myform2" method="get">
 			<input id="myQuestion" type="search" placeholder="Ask a question..."></input>
-			<a href="forumSearchResults.html" data-role="button" id="submit" onclick="processSearch2();" value="Search">Search</a>
+			<a href="forumSearchResults.html" data-role="button" id="submit2" onclick="processSearch2();" value="Search">Search</a>
+			<script>
+				var input = document.getElementById("myQuestion");
+				input.addEventListener("keyup", function(event) {
+					event.preventDefault();
+					if (event.keyCode === 13) {
+						document.getElementById("submit2").click();
+					}
+				});
+				</script>
 		</div>
 
 			<!-- <p id="demo"></p>
