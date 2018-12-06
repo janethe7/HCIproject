@@ -21,7 +21,7 @@
 
 
 		<div class="info">
-			<p>Missing an ingredient, recipe, or tool? Look no further!</p>
+			<p>Missing an ingredient or tool? <br>Do a quick search to ask your neighbors!</p>
 		</div>
 
 	<!--	<div class="searchbar">
@@ -42,8 +42,39 @@
 				<!--<a href="mapsPage.html"><button>Search</button></a>
 				<input id="submit" type="button" value="Search" onclick="processSearch();" href="mapsPage.html">-->
 				<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
+				<script>
+					var input = document.getElementById("address");
+					input.addEventListener("keyup", function(event) {
+						event.preventDefault();
+						if (event.keyCode === 13) {
+							document.getElementById("submit").click();
+						}
+					});
+					</script>
 		</container>
 	</div>
+
+	<div class="containerForumHomePage">
+		<div class="descriptionForum">
+			<h4> Have a cooking question? Ask on our forum! </h4>
+		</div>
+			<div class="leftForum">
+					<a href="forum.html">
+						<h4>From the
+						<br>Forum</h4>
+					</a>
+
+				</div>
+				<div class="rightForum">
+					<h4>Frequently asked questions</h4>
+						<a href="forumAnswers5.html">What are some must have knives??</a>
+						<br><a href="forumAnswers10.html">Tips for doubling a recipe?</a>
+				</div>
+	</div>
+
+
+
+
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>

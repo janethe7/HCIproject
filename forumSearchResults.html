@@ -27,7 +27,16 @@
 						Find<input id="query" type="text" placeholder="Ingredients, tools..."></input>
 						Near <input id="address" type="text" placeholder="City, State">
 						<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
-				</container>
+						<script>
+							var input = document.getElementById("address");
+							input.addEventListener("keyup", function(event) {
+							event.preventDefault();
+							if (event.keyCode === 13) {
+							document.getElementById("submit").click();
+							}
+							});
+						</script>
+					</container>
 				<a class=right href="forum.html">Forum</a>
 				<a class=right href="profile.html">Profile</a>
 			</div>
@@ -81,7 +90,16 @@
 		<div class="searchbar" style="margin-top: 20px; margin-left: 75px;">
 				<form name="myform2" id="myform2" method="get">
 			<input id="myQuestion" type="search" placeholder="Ask another question..."></input>
-			<a href="forumSearchResults.html" data-role="button" id="submit" onclick="processSearch2();" value="Search">Search</a>
+			<a href="forumSearchResults.html" data-role="button" id="submit2" onclick="processSearch2();" value="Search">Search</a>
+			<script>
+				var input = document.getElementById("myQuestion");
+				input.addEventListener("keyup", function(event) {
+				event.preventDefault();
+				if (event.keyCode === 13) {
+				document.getElementById("submit2").click();
+				}
+				});
+			</script>
 		</div>
 
 		<div class="containerForumAnswers">
@@ -133,7 +151,16 @@
 										<input class="forumQuestionComment" id="myPost" type="text" placeholder="Post your question...">
 										<!--<a href="mapsPage.html"><button>Search</button></a>
 										<input id="submit" type="button" value="Search" onclick="processSearch();" href="mapsPage.html">-->
-										<a href="forumPost.html" data-role="button" id="submit" onclick="makeForum();">Post</a>
+										<a href="forumPost.html" data-role="button" id="submit3" onclick="makeForum();">Post</a>
+										<script>
+											var input = document.getElementById("myPost");
+											input.addEventListener("keyup", function(event) {
+											event.preventDefault();
+											if (event.keyCode === 13) {
+											document.getElementById("submit3").click();
+											}
+											});
+										</script>
 							</div>
 
 							<!-- <div>

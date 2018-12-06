@@ -27,7 +27,16 @@
 					Find<input id="query" type="text" placeholder="Ingredients, tools..."></input>
 					Near <input id="address" type="text" placeholder="City, State">
 					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
-			</container>
+					<script>
+						var input = document.getElementById("address");
+						input.addEventListener("keyup", function(event) {
+						event.preventDefault();
+						if (event.keyCode === 13) {
+						document.getElementById("submit").click();
+						}
+						});
+					</script>
+				</container>
 			<a class=right href="forum.html">Forum</a>
 			<a class=right href="profile.html">Profile</a>
 		</div>
@@ -65,6 +74,15 @@
 					<div id="addNew">
 						<input id="newTask" type="text">
 						<button input type='button' / id="add"> add </button>
+						<script>
+							var input = document.getElementById("newTask");
+							input.addEventListener("keyup", function(event) {
+							event.preventDefault();
+							if (event.keyCode === 13) {
+							document.getElementById("add").click();
+							}
+							});
+						  </script>
 					</div>
 				</div>
 			</div>
@@ -87,6 +105,15 @@
 					<div id="addNew2">
 						<input id="newTask2" type="text">
 						<button input type='button' / id="add2"> add </button>
+						<script>
+							var input = document.getElementById("newTask2");
+							input.addEventListener("keyup", function(event) {
+							event.preventDefault();
+							if (event.keyCode === 13) {
+							document.getElementById("add2").click();
+							}
+							});
+						  </script>
 					</div>
 				</div>
 			</div>
@@ -99,6 +126,15 @@
 					<div id="addNew3">
 						<input id="newTask3" type="text">
 						<button input type='button' / id="add3"> add </button>
+						<script>
+							var input = document.getElementById("newTask3");
+							input.addEventListener("keyup", function(event) {
+							event.preventDefault();
+							if (event.keyCode === 13) {
+							document.getElementById("add3").click();
+							}
+							});
+						  </script>
 					</div>
 				</div>
 			</div>

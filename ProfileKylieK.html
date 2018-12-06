@@ -16,6 +16,15 @@
         Find <input type="text" placeholder="Ingredients, recipes, tools...">
         Near <input type="text" placeholder="Current location">
         <a href="mapsPage.html"><button>Search</button></a>
+        <script>
+          var input = document.getElementById("address");
+          input.addEventListener("keyup", function(event) {
+          event.preventDefault();
+          if (event.keyCode === 13) {
+          document.getElementById("submit").click();
+          }
+          });
+        </script>
       </container>
       <a class=right href="profile.html">Profile</a>
       <a class=right href="forum.html">Forum</a>

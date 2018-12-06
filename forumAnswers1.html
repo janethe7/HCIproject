@@ -16,7 +16,16 @@
 				<form name="myform" id="myform" action="" method="get">
 					Find<input id="query" type="text" placeholder="Ingredients, tools..."></input>
 					Near <input id="address" type="text" placeholder="City, State">
-					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
+                    <a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
+                    <script>
+                        var input = document.getElementById("address");
+                        input.addEventListener("keyup", function(event) {
+                            event.preventDefault();
+                            if (event.keyCode === 13) {
+                                document.getElementById("submit").click();
+                            }
+                        });
+                        </script>
 			</container>
 			<a class=right href="forum.html">Forum</a>
 			<a class=right href="profile.html">Profile</a>
@@ -61,6 +70,15 @@
                     document.getElementById("demo1").innerHTML = x;
                     }
                 </script>
+                <script>
+                    var input = document.getElementById("myText");
+                    input.addEventListener("keyup", function(event) {
+                    event.preventDefault();
+                    if (event.keyCode === 13) {
+                    document.getElementById("forumComment").click();
+                    }
+                    });
+                </script>
             </div>
 
             <div class="commentForum">
@@ -74,7 +92,7 @@
                     <!-- Comment Box 2 -->
                     <p id="demo2"></p>
                     <input type="text" id="myText2" placeholder="Type your comment here...">
-                    <button id="forumComment" input type='button' / onclick="myFunction2()">Comment</button>
+                    <button id="forumComment1" input type='button' / onclick="myFunction2()">Comment</button>
                     <script>
                         function myFunction2() {
                             var comment2 = $("#myText2").val();
@@ -83,6 +101,15 @@
                         document.getElementById("demo2").innerHTML = comment2;
                         }
                     </script>
+                    <script>
+                        var input = document.getElementById("myText2");
+                        input.addEventListener("keyup", function(event) {
+                            event.preventDefault();
+                            if (event.keyCode === 13) {
+                                document.getElementById("forumComment1").click();
+                            }
+                        });
+                        </script>
 
                 </div>
         </div>
