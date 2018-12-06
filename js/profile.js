@@ -1,3 +1,10 @@
+function addTool(){
+    var tool = $("#profileTool").val();
+    localStorage.setItem("tool", tool);
+    console.log("getting in there");
+}
+
+
 function processLogin(){
     var username = $("#username").val();
     var password = $("#password").val();
@@ -55,11 +62,11 @@ function processSignup(){
   }
 }
 
-function addTool(){
+/*function addTool(){
     var tool = $("#newTool").val();
     localStorage.setItem("tool", tool);
     userTools.push(tool);
-}
+}*/
 
 function clearSearch(){
     $('#loginform').get(0).reset();

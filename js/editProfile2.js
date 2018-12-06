@@ -2,6 +2,13 @@ var newtask2 = document.getElementById( 'newTask2' );
 var btn = document.getElementById( 'add2' );
 var nTaskPlace2 = document.getElementById( 'nTaskPlace2' );
 
+function addIngredient(){
+var ingredient = $("#newTask2").val();
+console.log(ingredient);
+localStorage.setItem("ingredient", ingredient);
+}
+
+
 var AddTask2 = function() {
 		var containerDiv = document.createElement( 'div' );
     var paragraph = document.createElement( 'p' );
