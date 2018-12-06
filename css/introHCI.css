@@ -541,6 +541,15 @@ body
 	margin-left: 75px;
 	background-color: white;
 	}
+	
+	.mapsResultsTemplate {
+		width: 560px;
+		padding: 0px;
+		border: 0.5px solid grey;
+		margin-left: 20px;
+		background-color: white;
+		margin-bottom: 20px;
+		}
 
 	.viewThreadButton {
 	background-color: #6ca2a0;
