@@ -78,25 +78,14 @@
                 <p style="padding: 0px; margin-left: 50px">I have been allergic to eggs all my life. What a great recipe
                 for my cookie cravings!</p>
 
-                <!-- Comment Box 1 -->
-                <p id="demo1"></p>
-                <input type="text" id="myText" placeholder="Type your comment here...">
-                <button id="forumComment" input type='button' / onclick="myFunction()">Comment</button>
-                <script>
-                    function myFunction() {
-                    var x = document.getElementById("myText").value;
-                    document.getElementById("demo1").innerHTML = x;
-                    }
-                </script>
-                    <script>
-                        var input = document.getElementById("myText");
-                        input.addEventListener("keyup", function(event) {
-                        event.preventDefault();
-                        if (event.keyCode === 13) {
-                        document.getElementById("forumComment").click();
-                        }
-                        });
-                    </script>
+								<!-- Comment Box 1 -->
+								<a href="profile.html"><h3 style="padding: 0px; margin-left: 50px">Me</h3></a>
+								<p style="padding: 0px; margin-left: 50px" id="myComment11"></p>
+								<script>
+									document.getElementById("myComment11").innerHTML = localStorage.getItem("comment11");
+								</script>
+								<input id="forumComment11" type="text" placeholder="Type your comment here..."></input>
+								<button data-role="button" id="forumButton" onclick="addComment11()" value="Comment" >Comment</button>
             </div>
 
             <div class="commentForum">
@@ -107,25 +96,14 @@
 										<a href="ProfileTammyB.html"><h3 style="padding: 0px; margin-left: 50px">Tammy B.</h3></a>
                     <p style="padding: 0px; margin-left: 50px">This is great! Thank you!!</p>
 
-                    <!-- Comment Box 2 -->
-                    <p id="demo2"></p>
-                    <input type="text" id="myText2" placeholder="Type your comment here...">
-                    <button id="forumComment1" input type='button' / onclick="myFunction2()">Comment</button>
-                    <script>
-                        function myFunction2() {
-                        var y = document.getElementById("myText2").value;
-                        document.getElementById("demo2").innerHTML = y;
-                        }
-                    </script>
-                                        <script>
-                                            var input = document.getElementById("myText2");
-                                            input.addEventListener("keyup", function(event) {
-                                            event.preventDefault();
-                                            if (event.keyCode === 13) {
-                                            document.getElementById("forumComment1").click();
-                                            }
-                                            });
-                                        </script>
+										<!-- Comment Box 2 -->
+										<a href="profile.html"><h3 style="padding: 0px; margin-left: 50px">Me</h3></a>
+										<p style="padding: 0px; margin-left: 50px" id="myComment12"></p>
+										<script>
+											document.getElementById("myComment12").innerHTML = localStorage.getItem("comment12");
+										</script>
+										<input id="forumComment12" type="text" placeholder="Type your comment here..."></input>
+										<button data-role="button" id="forumButton" onclick="addComment12()" value="Comment" >Comment</button>
                 </div>
         </div>
 
@@ -141,10 +119,11 @@
     </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/handlebars-v4.0.11.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/handlebars-v4.0.11.js"></script>
     <script src="js/search.js"></script>
     <script src="js/forumSearch.js"></script>
+		<script src="js/forumComments.js"></script>
 
 
 </body>

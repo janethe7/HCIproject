@@ -4,15 +4,6 @@ function processSearch2(){
     localStorage.setItem("input", input);
 }
 
-function addComment(){
-    var comment = $("#forumComment").val();
-
-    localStorage.setItem("comment", comment);
-    console.log('comment function');
-
-}
-
-
 function clearSearch(){
     $('#myform').get(0).reset();
 }

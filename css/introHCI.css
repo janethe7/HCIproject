@@ -639,25 +639,14 @@ body
 	padding-left: 6px;
 }
 
-#myText {
+.commentForum input {
 	font-size: 15px;
 	font-family: "Futura", Verdana, serif;
 	color: black;
 	outline: none;
+	width: 300px;
 }
 
-#myText2 {
-	float: center;
-	padding: 0px;
-	font-size: 20px;
-	height: 21px;
-	width: 300px;
-	border: 1px solid gray;
-	color: #bfbfbf;
-	background: white;
-	display: inline-block;
-	padding-left: 6px;
-}
 
 #myText2 {
 	font-size: 15px;
@@ -686,7 +675,7 @@ body
 	outline: none;
 }
 
-#forumComment {
+#forumButton {
 	width: 80px;
 	  height: 24px;
 	  background-color: #6ca2a0;
@@ -698,7 +687,7 @@ body
 	cursor: pointer;
 }
 
-#forumComment1 {
+/*#forumComment1 {
 	width: 80px;
 	  height: 24px;
 	  background-color: #6ca2a0;
@@ -706,11 +695,11 @@ body
 	  color: black;
 	font-size: 15px;
 	  font-family: "Futura", Verdana, serif;
-	border-left: none; /* Prevent double borders */
+	border-left: none; /* Prevent double borders
 	cursor: pointer;
-}
+}*/
 
-#forumComment2 {
+/*#forumComment2 {
 	width: 80px;
 	  height: 24px;
 	  background-color: #6ca2a0;
@@ -718,9 +707,9 @@ body
 	  color: black;
 	font-size: 15px;
 	  font-family: "Futura", Verdana, serif;
-	border-left: none; /* Prevent double borders */
+	border-left: none; /* Prevent double borders
 	cursor: pointer;
-}
+}*/
 
 .forumQuestionComment {
 	float: center;
@@ -827,5 +816,3 @@ body
 #noResults {
 	margin-left: 50px;
 }
-
-

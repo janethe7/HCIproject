@@ -52,50 +52,28 @@
 							<a href="ProfileJohnnyG.html"><h3 style="padding: 0px; margin-left: 0px">Johnny G.</h3></a>
                 <p style="padding: 0px">Sure, I don't see why not!</p>
 
-                <!-- Comment Box 1 -->
-                <p id="demo1"></p>
-                <input type="text" id="myText" placeholder="Type your comment here...">
-                <button id="forumComment" input type='button' / onclick="myFunction()">Comment</button>
-                <script>
-                    function myFunction() {
-                    var x = document.getElementById("myText").value;
-                    document.getElementById("demo1").innerHTML = x;
-                    }
-                </script>
-                <script>
-                    var input = document.getElementById("myText");
-                    input.addEventListener("keyup", function(event) {
-                    event.preventDefault();
-                    if (event.keyCode === 13) {
-                    document.getElementById("forumComment").click();
-                    }
-                    });
-                </script>
+								<!-- Comment Box 1 -->
+								<a href="profile.html"><h3 style="padding: 0px; margin-left: 50px">Me</h3></a>
+								<p style="padding: 0px; margin-left: 50px" id="myComment7"></p>
+								<script>
+									document.getElementById("myComment7").innerHTML = localStorage.getItem("comment7");
+								</script>
+								<input id="forumComment7" type="text" placeholder="Type your comment here..."></input>
+								<button data-role="button" id="forumButton" onclick="addComment7()" value="Comment" >Comment</button>
             </div>
 
             <div class="commentForum">
 								<a href="ProfileGabbyH.html"><h3 style="padding: 0px; margin-left: 0px">Gabby H.</h3></a>
                     <p style="padding: 0px">Yeah same! I think it's safe?</p>
 
-                    <!-- Comment Box 2 -->
-                    <p id="demo2"></p>
-                    <input type="text" id="myText2" placeholder="Type your comment here...">
-                    <button id="forumComment1" input type='button' / onclick="myFunction2()">Comment</button>
-                    <script>
-                        function myFunction2() {
-                        var y = document.getElementById("myText2").value;
-                        document.getElementById("demo2").innerHTML = y;
-                        }
-                    </script>
-                    <script>
-                        var input = document.getElementById("myText2");
-                        input.addEventListener("keyup", function(event) {
-                        event.preventDefault();
-                        if (event.keyCode === 13) {
-                        document.getElementById("forumComment1").click();
-                        }
-                        });
-                    </script>
+										<!-- Comment Box 2 -->
+										<a href="profile.html"><h3 style="padding: 0px; margin-left: 50px">Me</h3></a>
+										<p style="padding: 0px; margin-left: 50px" id="myComment8"></p>
+										<script>
+											document.getElementById("myComment8").innerHTML = localStorage.getItem("comment8");
+										</script>
+										<input id="forumComment8" type="text" placeholder="Type your comment here..."></input>
+										<button data-role="button" id="forumButton" onclick="addComment8()" value="Comment" >Comment</button>
                 </div>
 
                 <div class="commentForum">
@@ -105,25 +83,14 @@
                 <h4 style="padding: 0px; margin-left: 50px">Johnny G.</h4>
                 <p style="padding: 0px; margin-left: 50px">I gave it a try, so far so good! It was safe! :)</p>
 
-                <!-- Comment Box 3 -->
-                <p id="demo3"></p>
-                <input type="text" id="myText3" placeholder="Type your comment here...">
-                <button id="forumComment2" input type='button' / onclick="myFunction3()">Comment</button>
-                <script>
-                    function myFunction3() {
-                    var z = document.getElementById("myText3").value;
-                    document.getElementById("demo3").innerHTML = z;
-                    }
-                </script>
-                <script>
-                    var input = document.getElementById("myText3");
-                    input.addEventListener("keyup", function(event) {
-                    event.preventDefault();
-                    if (event.keyCode === 13) {
-                    document.getElementById("forumComment2").click();
-                    }
-                    });
-                </script>
+								<!-- Comment Box 3 -->
+								<a href="profile.html"><h3 style="padding: 0px; margin-left: 50px">Me</h3></a>
+								<p style="padding: 0px; margin-left: 50px" id="myComment9"></p>
+								<script>
+									document.getElementById("myComment9").innerHTML = localStorage.getItem("comment9");
+								</script>
+								<input id="forumComment9" type="text" placeholder="Type your comment here..."></input>
+								<button data-role="button" id="forumButton" onclick="addComment9()" value="Comment" >Comment</button>
             </div>
         </div>
 
@@ -139,10 +106,11 @@
     </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/handlebars-v4.0.11.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/handlebars-v4.0.11.js"></script>
     <script src="js/search.js"></script>
     <script src="js/forumSearch.js"></script>
+		<script src="js/forumComments.js"></script>
 
 
 </body>
