@@ -42,7 +42,7 @@
         z-index:-1;'>
 
         <h3 style="margin-left: 75px">
-                "WWhat are the must have knives?"
+                "What are the must have knives?"
         </h3>
 
     <div class="containerForumAnswers">
@@ -67,10 +67,16 @@
                 <p style="padding: 0px; margin-left: 50px">This is awesome! Thanks for the list man!</p>
 
                 <!-- Comment Box 1 -->
-                <p id="demo1"></p>
-                <input type="text" id="myText" placeholder="Type your comment here...">
-                <button id="forumComment" input type='button' / onclick="myFunction()">Comment</button>
-                <script>
+								<p id="myComment"></p>
+								<script>
+									document.getElementById("myComment").innerHTML = localStorage.getItem("comment");
+								</script>
+								<!--<h1 id="myComment"></h1>-->
+								<input id="forumComment" type="text" placeholder="Type your comment here..."></input>
+                <button data-role="button" id="forumButton" onclick="addComment()" value="Comment" >Comment</button>
+
+							<!--	<button id="forumComment" class="btn btn-primary btn-lg">Comment</button>-->
+          <!--      <script>
                     function myFunction() {
                     var x = document.getElementById("myText").value;
                     document.getElementById("demo1").innerHTML = x;
@@ -84,7 +90,7 @@
                         document.getElementById("forumComment").click();
                         }
                         });
-                    </script>
+                    </script>-->
             </div>
 
         </div>
@@ -104,8 +110,8 @@
     <script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/handlebars-v4.0.11.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/forumSearch.js"></script>
+	<script src="js/forumSearch.js"></script>
+  <script src="js/search.js"></script>
 
 
 </body>
