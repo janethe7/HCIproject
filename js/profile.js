@@ -41,26 +41,28 @@ function processSignup(){
     localStorage.setItem("email", email);
     localStorage.setItem("password2", password2);
 
-  /*  const sqlite3 = require('sqlite3').verbose();
+    var email = $("#email").val();
 
-    let db = new sqlite3.Database('../js/userDB.db');
+    function validateEmail(email) {
+      var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    }
 
-    db.run(`INSERT INTO user(name, email, location, password) VALUES(?,?,?,?)`, [name, location, email, password2], function(err) {
-       if (err) {
-         return console.log(err.message);
-       }
-       // get the last insert id
-       console.log(`A row has been inserted with rowid ${this.lastID}`);
-     });
-*/
+    if (!validateEmail(email) && (password1 !== confirmPassword)) {
+      alert('Email is not valid and passwords do not match. Please try again!');
+    } else {
+      if (password1 !== confirmPassword){
+        alert('Passwords do not match. Please try again!');
+      }
+      if (!validateEmail(email)){
+        alert('Email is not valid. Please try again!');
+      }
+      else{
+        window.open("profile.html");
+      }
+    }
 
-  if (password1 !== confirmPassword) {
-      alert('Passwords do not match. Please try again!');
-  }
-  else {
-      window.open("profile.html");
-  }
-}
+    }
 
 /*function addTool(){
     var tool = $("#newTool").val();
@@ -75,10 +77,6 @@ function clearSearch(){
 function retrieveSearchInfo(){
     var input = localStorage.getItem("username");
     $("#username").html("Input: " + username);
-
-    /* var address = localStorage.getItem("address");
-    $("#address").html("Address: " + address);
-    return address; */
 }
 
 var userSignUp = []
