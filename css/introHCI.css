@@ -39,6 +39,20 @@ header {
 	margin-top: 80px;
 }
 
+.info {
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	font-family: "Futura", Verdana, serif;
+	margin-top: 80px;
+}
+
+h5 {
+	font-size: 30px;
+	color: black;
+	font-family: "Futura", Verdana, serif;
+}
+
 .nav {
 		top: 0;
 		width: 100%;
@@ -47,6 +61,8 @@ header {
 		display: block;
 		position: fixed:absolute;
 }
+
+
 
 .navigationHome{
 	display: inline;
