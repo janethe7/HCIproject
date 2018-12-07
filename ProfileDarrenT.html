@@ -17,20 +17,27 @@
 					Find<input id="query" type="text" placeholder="Ingredients or tools"></input>
 					Near <input id="address" type="text" placeholder="City, State">
 					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
-          <script>
-            var input = document.getElementById("address");
-            input.addEventListener("keyup", function(event) {
-            event.preventDefault();
-            if (event.keyCode === 13) {
-            document.getElementById("submit").click();
-            }
-            });
-          </script>
-        </container>
-			<a class=right href="forum.html">Forum</a>
-			<a class=right href="profile.html">Profile</a>
-		</div>
-	</div>
+        <script>
+          var input = document.getElementById("address");
+          input.addEventListener("keyup", function(event) {
+          event.preventDefault();
+          if (event.keyCode === 13) {
+          document.getElementById("submit").click();
+          }
+          });
+        </script>
+      </container>
+      <a class=right href="forum.html">Forum</a>
+    </div>
+
+      <div class = "dropdown">
+      <p>Account</p>
+        <ul class = "dropdown-menu">
+          <li><a href="profileLogin.html">Login/Signup</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </div>
+    </div>
 
   <div>
     <div class = "profileRow1">
