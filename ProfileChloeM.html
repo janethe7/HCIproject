@@ -10,26 +10,27 @@
 
 <body>
   <div class="nav">
-    <div class="navigation">
-      <a class=left href="index.html">Home</a>
-      <container id="searchNav">
-        Find <input type="text" placeholder="Ingredients, recipes, tools...">
-        Near <input type="text" placeholder="Current location">
-        <a href="mapsPage.html"><button>Search</button></a>
-        <script>
-          var input = document.getElementById("address");
-          input.addEventListener("keyup", function(event) {
-          event.preventDefault();
-          if (event.keyCode === 13) {
-          document.getElementById("submit").click();
-          }
-          });
-        </script>
-      </container>
-      <a class=right href="profile.html">Profile</a>
-      <a class=right href="forum.html">Forum</a>
-    </div>
-  </div>
+		<div class="navigation">
+			<a class=left href="index.html">Communal Cooking</a>
+			<container id="searchNav">
+				<form name="myform" id="myform" action="" method="get">
+					Find<input id="query" type="text" placeholder="Ingredients, tools..."></input>
+					Near <input id="address" type="text" placeholder="City, State">
+					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
+          <script>
+            var input = document.getElementById("address");
+            input.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+            document.getElementById("submit").click();
+            }
+            });
+          </script>
+        </container>
+			<a class=right href="forum.html">Forum</a>
+			<a class=right href="profile.html">Profile</a>
+		</div>
+	</div>
 
   <div>
     <div class = "profileRow1">
