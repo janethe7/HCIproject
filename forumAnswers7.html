@@ -17,15 +17,7 @@
 					Find<input id="query" type="text" placeholder="Ingredients or tools"></input>
 					Near <input id="address" type="text" placeholder="City, State">
 					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
-        <script>
-          var input = document.getElementById("address");
-          input.addEventListener("keyup", function(event) {
-          event.preventDefault();
-          if (event.keyCode === 13) {
-          document.getElementById("submit").click();
-          }
-          });
-        </script>
+        
       </container>
       <a class=right href="forum.html">Forum</a>
     </div>
@@ -48,12 +40,16 @@
 		height:100%;
         z-index:-1;'>
 
-        <h3 style="margin-left: 75px">
-                "How to cook pasta."
-        </h3>
+<h2 style="margin-bottom: 0px; margin-left: 75px; margin-top: 20px; color: black; padding: 0px;">
+    Forum
+  </h2>
+
 
     <div class="containerForumAnswers">
         <div class="leftColForum">
+        <h3 style="margin-left: 75px">
+                "How to cook pasta."
+        </h3>
             <div class="commentForum">
 							<a href="ProfileKimL.html"><h3 style="padding: 0px; margin-left: 0px">Kim L.</h3></a>
                 <p style="padding: 0px">Fill a large stockpot with water. The more water the better - pasta only sticks when it is cooked in too little water.
