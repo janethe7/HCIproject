@@ -915,3 +915,47 @@ body
 #noResults {
 	margin-left: 50px;
 }
+
+#add {
+	width: 80px;
+	height: 35px;
+	background-color: #6ca2a0;
+	text-decoration: none;
+	color: black;
+  font-size: 15px;
+	font-family: "Futura", Verdana, serif;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+#newTask {
+	width: 200px;
+	height: 25px;
+	padding: 0px;
+	  margin-left: 0px;
+	  margin-bottom: 20px;
+	  font-family: "Futura", Verdana, serif;
+	  font-size: 15px;
+}
+
+#add2 {
+	width: 80px;
+	height: 35px;
+	background-color: #6ca2a0;
+	text-decoration: none;
+	color: black;
+  font-size: 15px;
+	font-family: "Futura", Verdana, serif;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+#newTask2 {
+	width: 200px;
+	height: 25px;
+	padding: 0px;
+	  margin-left: 0px;
+	  margin-bottom: 20px;
+	  font-family: "Futura", Verdana, serif;
+	  font-size: 15px;
+}
