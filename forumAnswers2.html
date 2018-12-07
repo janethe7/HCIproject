@@ -17,15 +17,7 @@
 					Find<input id="query" type="text" placeholder="Ingredients or tools"></input>
 					Near <input id="address" type="text" placeholder="City, State">
 					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
-        <script>
-          var input = document.getElementById("address");
-          input.addEventListener("keyup", function(event) {
-          event.preventDefault();
-          if (event.keyCode === 13) {
-          document.getElementById("submit").click();
-          }
-          });
-        </script>
+
       </container>
       <a class=right href="forum.html">Forum</a>
     </div>
@@ -40,6 +32,10 @@
     </div>
 </header>
 
+<h2 style="margin-bottom: 0px; margin-left: 75px; margin-top: 20px; color: black; padding: 0px;">
+    Forum
+  </h2>
+
 <body>
 		<img src="forum_results_pic.jpg" style='position:fixed;
 		top:0px;
@@ -53,7 +49,11 @@
         </h5>
 
     <div class="containerForumAnswers">
+
         <div class="leftColForum">
+            <h3 style="margin-left: 75px">
+                "How do I use a crock pot?"
+        </h3>
             <div class="commentForum">
 								<a href="ProfileSteveM.html"><h3 style="padding: 0px; margin-left: 0px">Steve M.</h3></a>
                 <p style="padding: 0px">Oh my goodness! I love crock pots! There should be some recipes and

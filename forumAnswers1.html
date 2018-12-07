@@ -15,17 +15,9 @@
 			<container id="searchNav">
 				<form name="myform" id="myform" action="" method="get">
 					Find<input id="query" type="text" placeholder="Ingredients or tools"></input>
-					Near <input id="address" type="text" placeholder="City, State">
+          Near <input id="address" type="text" placeholder="City, State">
+
 					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
-        <script>
-          var input = document.getElementById("address");
-          input.addEventListener("keyup", function(event) {
-          event.preventDefault();
-          if (event.keyCode === 13) {
-          document.getElementById("submit").click();
-          }
-          });
-        </script>
       </container>
       <a class=right href="forum.html">Forum</a>
     </div>
@@ -49,12 +41,18 @@
 		height:100%;
 		z-index:-1;'>
 
-        <h5 style="margin-left: 75px">
-                "What kind of pan should I use to sear steak?"
-        </h5>
+<h2 style="margin-bottom: 0px; margin-left: 75px; margin-top: 20px; color: black; padding: 0px;">
+  Forum
+</h2>
 
     <div class="containerForumAnswers">
         <div class="leftColForum">
+
+            <h5 style="margin-left: 75px">
+                "What kind of pan should I use to sear steak?"
+        </h5>
+
+
             <div class="commentForum">
                 <a href="ProfileBobP.html"><h3>Bob P.</h3></a>
                 <p style="padding: 0px">I use a cast iron!</p>
