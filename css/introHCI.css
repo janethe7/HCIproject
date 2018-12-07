@@ -216,11 +216,13 @@ header {
 		color: black;
 		text-decoration: none;
 		display: inline;
-		margin-top: -25px;
-		margin-left: 240px;
-		margin-right: 20px;
-		padding: 34px 25px;
+		padding-top: 5px;
+		margin-top: 20px;
+		margin-left: 200px;
+		margin-right: 10px;
+		/*padding: 40px 25px;*/
 		text-align: center;
+		width: 70px;
 }
 /** Button Styles **/
 .nav .dropdown p {
@@ -233,10 +235,10 @@ header {
 		color: black;
 		text-decoration: none;
 		display: inline;
-		margin-top: -110px;
+		margin-top: -107px;
 		margin-left: 1250px;
 		margin-right: 0px;
-		padding: 37px 25px;
+		padding: 35px 25px;
 }
 
 /*.nav .right p{

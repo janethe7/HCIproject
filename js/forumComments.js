@@ -96,6 +96,7 @@ function addComment19(){
 function addComment20(){
     var comment20 = $("#forumComment20").val();
     localStorage.setItem("comment20", comment20);
+    console.log("clicked");
 }
 
 function addComment21(){
