@@ -613,7 +613,15 @@ color: white;
 }
 
 #profileName{
+	font-weight: bold; 
+	margin-top: 30px;
+	margin-bottom: 5px;
+	font-size: 50px;
 	color: #6ca2a0;
+}
+
+#profileButton{
+	margin-top: -10px;
 }
 
 .profileRow2 {
@@ -937,10 +945,6 @@ body
 #templatedProjects {
 	/* background-color: pink; */
 	margin-left: 50px;
-}
-
-#profileName{
-	font-size: 25px;
 }
 
 #contact p{

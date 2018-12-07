@@ -131,10 +131,10 @@ var forumData = [
     {'name': 'Darren T.', 'Question': ['Does anyone have a vegetarian jambalaya recipe?'], 'link':'forumAnswers9.html', 'keyword': ['vegetarian', 'jambalaya', 'recipe'], 'email': 'darren@gmail.com', 'profile': 'ProfileDarrenT.html'},
     {'name': 'Tom W.', 'Question': ['Tips for doubling a recipe?'], 'link':'forumAnswers10.html', 'keyword': ['tips', 'doubling', 'double', 'recipe'], 'email': 'tom@gmail.com', 'profile': 'ProfileTomW.html'},
     {'name': 'Bob P.', 'Question': ['What are some good substitutes for vanilla extract?'], 'link':'forumAnswers11.html', 'keyword': ['vanilla', 'extract', 'substitute','substitutes'], 'email': 'bob@gmail.com', 'profile': 'ProfileBobP.html'},
-    {'name': 'Chloe M.', 'Question': ['How do you know if cheese has gone bad?'], 'link':'forumAnswers1.html', 'keyword': ['cheese', 'bad', 'cheeses'], 'email': 'chloe@gmail.com'},
-    {'name': 'Chris J.', 'Question': ['Can you substitute baking soda for baking powder?'], 'link':'forumAnswers1.html', 'keyword': ['substitute', 'baking', 'baking soda', 'powder', 'baking powder'], 'email': 'chris@gmail.com'},
-    {'name': 'Kylie K.', 'Question': ['How much water do I need to cook rice?'], 'link':'forumAnswers1.html', 'keyword': ['rice', 'water', 'cook', 'much'], 'email': 'kylie@gmail.com'},
-    {'name': 'Kim L.', 'Question': ['How do I know if an egg has gone bad?'], 'link':'forumAnswers1.html', 'keyword': ['egg', 'bad', 'eggs'], 'email': 'kim@gmail.com'},
+    // {'name': 'Chloe M.', 'Question': ['How do you know if cheese has gone bad?'], 'link':'forumAnswers1.html', 'keyword': ['cheese', 'bad', 'cheeses'], 'email': 'chloe@gmail.com'},
+    // {'name': 'Chris J.', 'Question': ['Can you substitute baking soda for baking powder?'], 'link':'forumAnswers1.html', 'keyword': ['substitute', 'baking', 'baking soda', 'powder', 'baking powder'], 'email': 'chris@gmail.com'},
+    // {'name': 'Kylie K.', 'Question': ['How much water do I need to cook rice?'], 'link':'forumAnswers1.html', 'keyword': ['rice', 'water', 'cook', 'much'], 'email': 'kylie@gmail.com'},
+    // {'name': 'Kim L.', 'Question': ['How do I know if an egg has gone bad?'], 'link':'forumAnswers1.html', 'keyword': ['egg', 'bad', 'eggs'], 'email': 'kim@gmail.com'},
 
 ]
 
