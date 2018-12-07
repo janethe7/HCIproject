@@ -14,7 +14,7 @@
 			<a class=left href="index.html">Communal Cooking</a>
 			<container id="searchNav">
 				<form name="myform" id="myform" action="" method="get">
-					Find<input id="query" type="text" placeholder="Ingredients, tools..."></input>
+					Find<input id="query" type="text" placeholder="Ingredients or tools"></input>
 					Near <input id="address" type="text" placeholder="City, State">
 					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
                     <script>
@@ -25,7 +25,7 @@
                         document.getElementById("submit").click();
                         }
                         });
-                    </script>            
+                    </script>
                 </container>
 			<a class=right href="forum.html">Forum</a>
 			<a class=right href="profile.html">Profile</a>
@@ -52,50 +52,28 @@
                 <p style="padding: 0px">Here's a bunch of them! <br>
                 <a href="https://glutenfreedaddy.com/gluten-free-banana-bread-recipes/">https://glutenfreedaddy.com/gluten-free-banana-bread-recipes/</a></p>
 
-                <!-- Comment Box 1 -->
-                <p id="demo1"></p>
-                <input type="text" id="myText" placeholder="Type your comment here...">
-                <button id="forumComment" input type='button' / onclick="myFunction()">Comment</button>
-                <script>
-                    function myFunction() {
-                    var x = document.getElementById("myText").value;
-                    document.getElementById("demo1").innerHTML = x;
-                    }
-                </script>
-                                    <script>
-                                        var input = document.getElementById("myText");
-                                        input.addEventListener("keyup", function(event) {
-                                        event.preventDefault();
-                                        if (event.keyCode === 13) {
-                                        document.getElementById("forumComment").click();
-                                        }
-                                        });
-                                    </script>
+								<!-- Comment Box 1 -->
+								<a href="profile.html"><h3 style="padding: 0px; margin-left: 50px">Me</h3></a>
+								<p style="padding: 0px; margin-left: 50px" id="myComment14"></p>
+								<script>
+									document.getElementById("myComment14").innerHTML = localStorage.getItem("comment14");
+								</script>
+								<input id="forumComment14" type="text" placeholder="Type your comment here..."></input>
+								<button data-role="button" id="forumButton" onclick="addComment14()" value="Comment" >Comment</button>
             </div>
 
             <div class="commentForum">
 							<a href="ProfileGabbyH.html"><h3 style="padding: 0px; margin-left: 0px">Gabby H.</h3></a>
                     <p style="padding: 0px">I like the ones on this site: <a href="https://www.yummly.com/recipes/gluten-free-banana-dessert">https://www.yummly.com/recipes/gluten-free-banana-dessert</a></p>
 
-                    <!-- Comment Box 2 -->
-                    <p id="demo2"></p>
-                    <input type="text" id="myText2" placeholder="Type your comment here...">
-                    <button id="forumComment1" input type='button' / onclick="myFunction2()">Comment</button>
-                    <script>
-                        function myFunction2() {
-                        var y = document.getElementById("myText2").value;
-                        document.getElementById("demo2").innerHTML = y;
-                        }
-                    </script>
-                                        <script>
-                                            var input = document.getElementById("myText2");
-                                            input.addEventListener("keyup", function(event) {
-                                            event.preventDefault();
-                                            if (event.keyCode === 13) {
-                                            document.getElementById("forumComment1").click();
-                                            }
-                                            });
-                                        </script>
+										<!-- Comment Box 1 -->
+										<a href="profile.html"><h3 style="padding: 0px; margin-left: 50px">Me</h3></a>
+										<p style="padding: 0px; margin-left: 50px" id="myComment15"></p>
+										<script>
+											document.getElementById("myComment15").innerHTML = localStorage.getItem("comment15");
+										</script>
+										<input id="forumComment15" type="text" placeholder="Type your comment here..."></input>
+										<button data-role="button" id="forumButton" onclick="addComment15()" value="Comment" >Comment</button>
                 </div>
 
                 <div class="commentForum">
@@ -106,25 +84,14 @@
 								<a href="ProfileJohnnyG.html"><h3 style="padding: 0px; margin-left: 50px">Johnny G.</h3></a>
                 <p style="padding: 0px; margin-left: 50px">I gave it a try, so far so good! It was safe! :)</p>
 
-                <!-- Comment Box 3 -->
-                <p id="demo3"></p>
-                <input type="text" id="myText3" placeholder="Type your comment here...">
-                <button id="forumComment2" input type='button' / onclick="myFunction3()">Comment</button>
-                <script>
-                    function myFunction3() {
-                    var z = document.getElementById("myText3").value;
-                    document.getElementById("demo3").innerHTML = z;
-                    }
-                </script>
-                                    <script>
-                                        var input = document.getElementById("myText3");
-                                        input.addEventListener("keyup", function(event) {
-                                        event.preventDefault();
-                                        if (event.keyCode === 13) {
-                                        document.getElementById("forumComment2").click();
-                                        }
-                                        });
-                                    </script>
+								<!-- Comment Box 3 -->
+								<a href="profile.html"><h3 style="padding: 0px; margin-left: 50px">Me</h3></a>
+								<p style="padding: 0px; margin-left: 50px" id="myComment16"></p>
+								<script>
+									document.getElementById("myComment16").innerHTML = localStorage.getItem("comment16");
+								</script>
+								<input id="forumComment16" type="text" placeholder="Type your comment here..."></input>
+								<button data-role="button" id="forumButton" onclick="addComment16()" value="Comment" >Comment</button>
             </div>
         </div>
 
@@ -140,10 +107,11 @@
     </div>
 
     <script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/handlebars-v4.0.11.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/handlebars-v4.0.11.js"></script>
     <script src="js/search.js"></script>
     <script src="js/forumSearch.js"></script>
+		<script src="js/forumComments.js"></script>
 
 
 </body>

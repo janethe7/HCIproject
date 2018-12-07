@@ -14,7 +14,7 @@
 			<a class=left href="index.html">Communal Cooking</a>
 			<container id="searchNav">
 				<form name="myform" id="myform" action="" method="get">
-					Find<input id="query" type="text" placeholder="Ingredients, tools..."></input>
+					Find<input id="query" type="text" placeholder="Ingredients or tools"></input>
 					Near <input id="address" type="text" placeholder="City, State">
 					<a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
                     <script>
@@ -40,9 +40,9 @@
 		width:100%;
 		height:100%;
         z-index:-1;'>
-        
+
         <h3 style="margin-left: 75px">
-                "WWhat are the must have knives?"
+                "What are the must have knives?"
         </h3>
 
     <div class="containerForumAnswers">
@@ -66,11 +66,16 @@
 										<a href="ProfileTomW.html"><h3 style="padding: 0px; margin-left: 50px">Tom W.</h3></a>
                 <p style="padding: 0px; margin-left: 50px">This is awesome! Thanks for the list man!</p>
 
-                <!-- Comment Box 1 -->
-                <p id="demo1"></p>
-                <input type="text" id="myText" placeholder="Type your comment here...">
-                <button id="forumComment" input type='button' / onclick="myFunction()">Comment</button>
-                <script>
+								<!-- Comment Box 1 -->
+								<a href="profile.html"><h3 style="padding: 0px; margin-left: 50px">Me</h3></a>
+								<p style="padding: 0px; margin-left: 50px" id="myComment10"></p>
+								<script>
+									document.getElementById("myComment10").innerHTML = localStorage.getItem("comment10");
+								</script>
+								<input id="forumComment10" type="text" placeholder="Type your comment here..."></input>
+								<button data-role="button" id="forumButton" onclick="addComment10()" value="Comment" >Comment</button>
+							<!--	<button id="forumComment" class="btn btn-primary btn-lg">Comment</button>-->
+          <!--      <script>
                     function myFunction() {
                     var x = document.getElementById("myText").value;
                     document.getElementById("demo1").innerHTML = x;
@@ -84,7 +89,7 @@
                         document.getElementById("forumComment").click();
                         }
                         });
-                    </script>
+                    </script>-->
             </div>
 
         </div>
@@ -104,9 +109,9 @@
     <script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/handlebars-v4.0.11.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/forumSearch.js"></script>
-
+	<script src="js/forumSearch.js"></script>
+  <script src="js/search.js"></script>
+	<script src="js/forumComments.js"></script>
 
 </body>
 </html>

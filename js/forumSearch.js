@@ -29,7 +29,7 @@ var forumData = [
     {'name': 'Chloe M.', 'Question': ['How do you know if cheese has gone bad?'], 'link':'forumAnswers1.html', 'keyword': ['cheese', 'bad', 'cheeses'], 'email': 'chloe@gmail.com'},
     {'name': 'Chris J.', 'Question': ['Can you substitute baking soda for baking powder?'], 'link':'forumAnswers1.html', 'keyword': ['substitute', 'baking', 'baking soda', 'powder', 'baking powder'], 'email': 'chris@gmail.com'},
     {'name': 'Kylie K.', 'Question': ['How much water do I need to cook rice?'], 'link':'forumAnswers1.html', 'keyword': ['rice', 'water', 'cook', 'much'], 'email': 'kylie@gmail.com'},
-    {'name': 'Kim L.', 'Question': ['How do I know if an egg has gone bad?'], 'link':'forumAnswers1.html', 'keyword': ['egg', 'bad', 'eggs'], 'email': 'kim@gmail.com'}, 
+    {'name': 'Kim L.', 'Question': ['How do I know if an egg has gone bad?'], 'link':'forumAnswers1.html', 'keyword': ['egg', 'bad', 'eggs'], 'email': 'kim@gmail.com'},
 
 ]
 
@@ -46,6 +46,23 @@ input = localStorage.getItem("input").split(' ');
 var source   = $("#forumResultsTemplate").html();
 var template = Handlebars.compile(source);
 var parentDiv = $("#forumResults");
+
+// when you first load the page, set a custom name if you have one:
+
+// use localStorage to store your name
+$("#forumComment").click(function() {
+  console.log("commenting");
+  var inputComment = prompt("Type your comment here..");
+  if (inputComment) {
+    $("#myComment").html(inputComment);
+    localStorage.setItem('customComment', inputComment);
+  }
+});
+
+var comment = localStorage.getItem('customComment');
+if (comment) {
+  $("#myComment").html(comment);
+}
 
 
 /* new CODE */
@@ -95,4 +112,8 @@ if (count == 0) {
     parentDiv.append(noResults);
 }
 
-})
+
+
+
+
+});

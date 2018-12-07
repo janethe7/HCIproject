@@ -14,7 +14,7 @@
 			<a class=left href="index.html">Communal Cooking</a>
 			<container id="searchNav">
 				<form name="myform" id="myform" action="" method="get">
-					Find<input id="query" type="text" placeholder="Ingredients, tools..."></input>
+					Find<input id="query" type="text" placeholder="Ingredients or tools"></input>
 					Near <input id="address" type="text" placeholder="City, State">
                     <a href="mapsPage.html" data-role="button" id="submit" onclick="processSearch();" value="Search">Search</a>
                     <script>
@@ -40,7 +40,7 @@
 		width:100%;
 		height:100%;
         z-index:-1;'>
-        
+
         <h3 style="margin-left: 75px">
                 "How to make egg whites fluffy without a hand-mixer?"
         </h3>
@@ -58,25 +58,14 @@
                 first. And then after a few minutes, I'll speed it up. Learned this technique from a friend
             and it works everytime!</p>
 
-                <!-- Comment Box 1 -->
-                <p id="demo1"></p>
-                <input type="text" id="myText" placeholder="Type your comment here...">
-                <button id="forumComment" input type='button' / onclick="myFunction()">Comment</button>
-                <script>
-                    function myFunction() {
-                    var x = document.getElementById("myText").value;
-                    document.getElementById("demo1").innerHTML = x;
-                    }
-                </script>
-                <script>
-                    var input = document.getElementById("myText");
-                    input.addEventListener("keyup", function(event) {
-                    event.preventDefault();
-                    if (event.keyCode === 13) {
-                    document.getElementById("forumComment").click();
-                    }
-                    });
-                </script>
+						<!-- Comment Box 1 -->
+						<a href="profile.html"><h3 style="padding: 0px; margin-left: 50px">Me</h3></a>
+						<p style="padding: 0px; margin-left: 50px" id="myComment5"></p>
+						<script>
+							document.getElementById("myComment5").innerHTML = localStorage.getItem("comment5");
+						</script>
+						<input id="forumComment5" type="text" placeholder="Type your comment here..."></input>
+						<button data-role="button" id="forumButton" onclick="addComment5()" value="Comment" >Comment</button>
             </div>
 
             <div class="commentForum">
@@ -97,26 +86,14 @@
                     <p style="padding: 0px; margin-left: 50px">It has something to do with the molecules in
                     the egg once it reaches room temperature. That's all I know!</p>
 
-                    <!-- Comment Box 2 -->
-                    <p id="demo2"></p>
-                    <input type="text" id="myText2" placeholder="Type your comment here...">
-                    <button id="forumComment1" input type='button' / onclick="myFunction2()">Comment</button>
-                    <script>
-                        function myFunction2() {
-                        var y = document.getElementById("myText2").value;
-                        document.getElementById("demo2").innerHTML = y;
-												console.log("comment");
-                        }
-                    </script>
-                    <script>
-                        var input = document.getElementById("myText2");
-                        input.addEventListener("keyup", function(event) {
-                        event.preventDefault();
-                        if (event.keyCode === 13) {
-                        document.getElementById("forumComment1").click();
-                        }
-                        });
-                    </script>
+										<!-- Comment Box 2 -->
+										<a href="profile.html"><h3 style="padding: 0px; margin-left: 50px">Me</h3></a>
+										<p style="padding: 0px; margin-left: 50px" id="myComment6"></p>
+										<script>
+											document.getElementById("myComment6").innerHTML = localStorage.getItem("comment6");
+										</script>
+										<input id="forumComment6" type="text" placeholder="Type your comment here..."></input>
+										<button data-role="button" id="forumButton" onclick="addComment6()" value="Comment" >Comment</button>
                 </div>
         </div>
 
@@ -135,6 +112,7 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/handlebars-v4.0.11.js"></script>
 		<script src="js/search.js"></script>
+		<script src="js/forumComments.js"></script>
 
 
 
