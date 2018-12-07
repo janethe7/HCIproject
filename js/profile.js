@@ -1,3 +1,10 @@
+/*function addTool(){
+    var tool = $("#profileTool").val();
+    localStorage.setItem("tool", tool);
+    console.log("getting in there");
+}*/
+
+
 function processLogin(){
     var username = $("#username").val();
     var password = $("#password").val();
@@ -57,11 +64,11 @@ function processSignup(){
 
     }
 
-function addTool(){
+/*function addTool(){
     var tool = $("#newTool").val();
     localStorage.setItem("tool", tool);
     userTools.push(tool);
-}
+}*/
 
 function clearSearch(){
     $('#loginform').get(0).reset();
@@ -115,5 +122,20 @@ var userData = [
       var noResults = template(results[0]);
       parentDiv.append(noResults);
   }
+
+  // when you first load the page, set a custom name if you have one:
+/*var tool = localStorage.getItem('customTool');
+if (tool) {
+  $("#myTool").html(tool);
+}
+
+// use localStorage to store your name
+$("#changeTool").click(function() {
+  var newTool = prompt("What's your new name?");
+  if (newTool) {
+    $("#myTool").html(newTool);
+    localStorage.setItem('customTool', newTool);
+  }
+});*/
 
   });

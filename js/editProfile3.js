@@ -1,6 +1,9 @@
 var newtask3 = document.getElementById( 'newTask3' );
 var btn = document.getElementById( 'add3' );
 var nTaskPlace3 = document.getElementById( 'nTaskPlace3' );
+var tool = $("#newTask3").val();
+localStorage.setItem("tool", tool);
+console.log(tool);
 
 var AddTask3 = function() {
 		var containerDiv = document.createElement( 'div' );
