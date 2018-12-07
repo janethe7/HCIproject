@@ -870,7 +870,23 @@ body
 #templatedProjects {
 	/* background-color: pink; */
 	margin-left: 50px;
+}
 
+#profileName{
+	font-size: 25px;
+}
+
+#contact p{
+	padding: 0px;
+
+}
+
+#myingredients li{
+	font-size: 20px;
+}
+
+#mytools li{
+	font-size: 20px;
 }
 
 .leftColForum1 {

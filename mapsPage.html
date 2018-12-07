@@ -50,111 +50,10 @@
 		localStorage.removeItem( 'objectToPass' ); // Clear the localStorage
 		var query = myData[0];
 		var address = myData[1];
-		//alert('firstData: ' + firstData + '\nsecondData: ' + secondData);
 	</script>
 
-<!-- 		<div id="map" style="width:400px;height:400px;"></div>
-	    <script>
-			//var input = localStorage.getItem("query");
-			var address = localStorage.getItem("address");
-				//var address = retrieveSearchInfo();
-				/*geocoder.geocode( { 'address': address}, function(results, status) {
-					if (status == google.maps.GeocoderStatus.OK) {
-	    			var latitude = results[0].geometry.location.lat();
-	    			var longitude = results[0].geometry.location.lng();
-	    			alert(latitude);
-	    		}
-				});*/
-			function initMap() {
-				var latitude;
-			  var longitude;
-				var geocoder = new google.maps.Geocoder();
-				var address = localStorage.getItem("address");
-				geocoder.geocode( { 'address': address}, function(results, status) {
-				if (status == google.maps.GeocoderStatus.OK) {
-						latitude = results[0].geometry.location.lat();
-						localStorage.setItem( 'latitude', latitude);
-						longitude = results[0].geometry.location.lng();
-						localStorage.setItem( 'longitude', longitude);
-					}
-				});
-				var latitude = localStorage.getItem("latitude");
-				var longitude = localStorage.getItem('longitude');
-				latitude = localStorage.getItem("latitude");
-				longitude = localStorage.getItem("longitude");
-				// DO NOT DO THIS IN PRODUCTION CODE
-				// SANITIZE YOUR STRINGS IN LOCAL STORAGE BEFORE PARSING
-				var map = new google.maps.Map(document.getElementById('map'), {
-	          zoom: 8,
-	          center: {lat: parseFloat(latitude), lng: parseFloat(longitude)}
-	        });
-				//alert(center);
-				/*var latlng = new google.maps.LatLng(latitude, longitude);
-    		var mapOptions = {
-      		zoom: 8,
-      		center: latlng
-    		}
-				map = new google.maps.Map(document.getElementById('map'), mapOtions);*/
-        //var geocoder = new google.maps.Geocoder();
-			/*	address = document.getElementById('address').value;
-				localStorage.setItem( 'address', address);*/
-        document.getElementById('submit').addEventListener('click', function() {
-          geocodeAddress(geocoder, map);
-        });
-      }
-      /*function geocodeAddress(geocoder, resultsMap) {
-				//var address = localStorage.getItem('customAddress');
-        var address = document.getElementById('address').value;
-				//localStorage.setItem('customAddress', address);
-        geocoder.geocode({'address': address}, function(results, status) {
-          if (status === 'OK') {
-            resultsMap.setCenter(results[0].geometry.location);
-            var marker = new google.maps.Marker({
-              map: resultsMap,
-              position: results[0].geometry.location
-            });
-          } else {
-            alert('Geocode was not successful for the following reason: ' + status);
-          }
-        });
-      }*/
-	  	</script> -->
 	</div>
-<!--	<div>
-		<p>
-			<a href="profile.html" id = "result1">
-				1. Neighbor 1
-			</a>
-			<script>
-				var name = document.getElementById("result1");
-			</script>
-			<br> Address
-			<br> X.XX miles away
-		</p>
-		<a href="javascript:register_popup('narayan-prusty', 'Steve M.');">
-			<img id = "messageIcon" src = "messengerIcon.png" style = "cursor:pointer">
-		</a>
-	</div>
-	<div>
-		<p>
-			<a href="profile.html">2. Neighbor 2</a>
-			<br> Address
-			<br> X.XX miles away
-		</p>
-		<a href="javascript:register_popup('narayan-prusty', 'Steve M.');">
-			<img id = "messageIcon" src = "messengerIcon.png" style = "cursor:pointer">
-		</a>
-	</div>
-	<div>
-		<p>
-			<a href="profile.html">3. Neighbor 3</a>
-			<br> Address
-			<br> X.XX miles away
-		</p>
-		<a href="javascript:register_popup('narayan-prusty', 'Steve M.');">
-			<img id = "messageIcon" src = "messengerIcon.png" style = "cursor:pointer">
-		</a>
-	</div>-->
+
 <div class="containerForumAnswers">
 	<div class="leftColForum1" id="mapsCol1">
 
@@ -170,7 +69,7 @@
 	<!-- TEMPLATE FOR SEARCH RESULTS -->
 	<script id="entry-template" type="text/x-handlebars-template">
 			<div class="mapsResultsTemplate">
-			<p style="margin: 0px; padding 0px;s">
+			<p style="margin: 0px; padding="0px">
 				<a href={{html}}> {{name}}</a>
 				<br>{{location}}
 				<br>Here are ingredients to borrow: {{Ingredients}}
@@ -178,11 +77,6 @@
 				<br>
 				<br><a href="{{emailto}}"><button class="viewThreadButton">Message {{name}}</button></a>
 			</p>
-
-
-<!-- 			<a href="mailto: neighbor@gmail.com">
-					<img id = "messageIcon" src = "email-icon.png" style = "cursor:pointer">
-				</a> -->
 
 			</div>
 		</script>
@@ -227,7 +121,6 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/handlebars-v4.0.11.js"></script>
 		<script src="js/search.js"></script>
-		<script src="js/popupMessage.js"></script>
 
 </body>
 </html>
